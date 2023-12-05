@@ -1,0 +1,80 @@
+.bg-image-landing {
+  background-image: url("assests/bg-landingpage.png"); /* Replace 'your-background-image.jpg' with the actual image file path */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Set the height of the background */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* Custom styles for the first navbar */
+.navbar-first {
+  padding: 15px; /* Adjust padding */
+}
+
+.navbar-first .navbar-brand {
+  color: #007bff; /* Logo text color */
+}
+
+.navbar-first .navbar-nav {
+  list-style-type: none; /* Remove list-style-type */
+  display: flex;
+}
+
+.navbar-first .navbar-nav .nav-item {
+  margin-right: 10px; /* Adjust margin between items */
+}
+
+.navbar-first .navbar-nav .nav-link {
+  color: white; /* Item text color */
+  font-size: 20px; /* Set font size */
+  transition: color 0.3s, background-color 0.3s; /* Add transition effect */
+}
+
+.navbar-first .navbar-nav .nav-link:hover {
+  color: purple !important; /* Hover color */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.308
+  ) !important; /* Hover background color */
+}
+
+/* Custom styles for the second navbar */
+.navbar-second {
+  /* Add additional styles for the second navbar if needed */
+  padding: 15px; /* Adjust padding */
+}
+
+.navbar-second .navbar-nav .nav-item {
+  /* Add additional styles for the second navbar nav-items if needed */
+}
+
+.navbar-second .navbar-nav .nav-link {
+  color: white; /* Item text color */
+  font-size: 20px; /* Set font size */
+}
+
+.navbar-second .navbar-nav .nav-link:hover {
+  color: purple !important; /* Hover color */
+  background-color: white !important; /* Hover background color */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.548
+  ) !important; /* Hover background color */
+}
+
+.give-btn {
+  /* border: 1px solid white; */
+  text-align: center;
+  background-color: purple;
+}
+
+/* mobile */
+.navbar-toggler {
+  background-color: white !important;
+}
