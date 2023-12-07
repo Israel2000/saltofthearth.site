@@ -33,7 +33,7 @@
 }
 
 .navbar-first .navbar-nav .nav-link:hover {
-  color: purple !important; /* Hover color */
+  color: #6200C3 !important; /* Hover color */
   background-color: rgba(
     255,
     255,
@@ -58,7 +58,7 @@
 }
 
 .navbar-second .navbar-nav .nav-link:hover {
-  color: purple !important; /* Hover color */
+  color: #6200C3 !important; /* Hover color */
   background-color: white !important; /* Hover background color */
   background-color: rgba(
     255,
@@ -68,13 +68,53 @@
   ) !important; /* Hover background color */
 }
 
-.give-btn {
-  /* border: 1px solid white; */
-  text-align: center;
-  background-color: purple;
-}
 
 /* mobile */
 .navbar-toggler {
   background-color: white !important;
 }
+
+.btn-primary {
+  background-color: #6200C3 !important;
+  border: none !important;
+  padding: 10px;
+}
+
+.col-lg-8 {
+  margin-top: 200px;
+}
+
+.newsletter-form {
+  background-color: #6200C3;
+  height: 100px;
+  width: 100%;
+}
+
+h5 {
+  color:#6200C3;
+  font-weight: bold;
+}
+
+blockquote {
+  color: #6200C3;
+}
+
+div.text-bg-dark {
+  background-color: #6200C3 !important;
+}
+
+/* blog fix */
+div.card.mb-3 {
+  --bs-card-border-width: none;
+  --bs-card-title-spacer-y: 0 !important;
+  --bs-card-spacer-y: 0rem !important;
+}
+
+.soical-section {
+  height: 150px;
+    margin-bottom: 10px;
+  }
+
+  .btn-outline-secondary {
+    color: #6200C3;
+  }
