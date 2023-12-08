@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-
+    <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png"/>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,16 +13,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" hreef="forms.html" />
     <title>Salt of the Earth</title>
   </head>
 
   <body>
-    <div class="bg-image-landing">
       <!-- First Navbar with Logo on Left and Two Items on Far Right -->
-      <nav class="navbar navbar-light navbar-first">
+      <nav class="navbar navbar-light navbar-first bg-light">
         <div class="container">
           <a class="navbar-brand" href="#"
-            ><img src="assests/logo.png" width="300px"
+            ><img src="assests/logo.svg" width="300px"
           /></a>
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
@@ -40,9 +40,8 @@
           </ul>
         </div>
       </nav>
-
       <!-- Second Navbar with Centered Items -->
-      <nav class="navbar navbar-expand-lg navbar-light navbar-second">
+      <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
         <div class="container">
           <!-- Hamburger icon for small screens -->
           <button
@@ -97,33 +96,67 @@
                 <a class="nav-link" href="#">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">የእጮኝነት ት/ት እፈልጋለሁ</a>
+                <a class="nav-link" href="forms.html">የእጮኝነት ት/ት እፈልጋለሁ</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="container mt-5">
-        <div class="row">
-          <!-- Left side with 80% width on larger screens -->
-          <div class="col-lg-8">
-            <div class="custom-content">
-              <h1 class="text-white">
-                Empowering all people with Marriage and family counseling and
-                Build Strong Biblical Community.
-              </h1>
-              <div>
-                <button type="button" class="btn btn-primary btn-lg">
-                  OUR MISSION
-                </button>
-              </div>
-            </div>
+    
+<!-- carousel -->
+     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active ">
+        <img src="assests/bg-landingpage.png" />
+
+        <div class="container">
+          <div class="carousel-caption text-start ">
+            <h1> Empowering all people with Marriage and family counseling and
+                Build Strong Biblical Community.</h1>
+            <p>Some representative placeholder content for the first slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
           </div>
-          <!-- Right side (empty for illustration) -->
-          <div class="col-lg-4"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Another example headline.</h1>
+            <p>Some representative placeholder content for the second slide of the carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-end">
+            <h1>One more for good measure.</h1>
+            <p>Some representative placeholder content for the third slide of this carousel.</p>
+            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+          </div>
         </div>
       </div>
     </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+
     <!-- create div  100% background-->
     <div class="newsletter-form">
       <div class="container">
@@ -182,7 +215,7 @@
         <!-- Third Column -->
         <div class="col-md-4">
           <div class="card">
-            <img src="assests/whowearepic3.png" class="card-img-top" alt="..." />
+            <img src="assests/whoweare3.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title text-center">Mentorship</h5>
               
@@ -222,8 +255,22 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       </div>
     </div>
   </div>
+   <div class="row g-0 mt-4">
+    <div class="col-md-4">
+      <img src="assests/blog-pic.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Family</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
 </div>
-          <button class="btn btn-outline-light" type="button">Read More Blog</button>
+          
+          <button type="button" class="btn btn-outline-secondary">Read More Blog</button>
+
         </div>
       </div>
       <div class="col-md-6">
@@ -238,7 +285,19 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       </div>
     </div>
 
+      <!-- introduction to our founder -->
+<hr class="featurette-divider">
 
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
     <!-- footer -->
     <footer class="container py-5">
   <div class="row">
@@ -247,7 +306,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       <small class="d-block mb-3 text-muted">&copy; 2017–2022</small>
     </div>
     <div class="col-6 col-md">
-      <h5>Features</h5>
+      <h5>About</h5>
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="#">Cool stuff</a></li>
         <li><a class="link-secondary" href="#">Random feature</a></li>
@@ -258,7 +317,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5>Resources</h5>
+      <h5>Teaching</h5>
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="#">Resource name</a></li>
         <li><a class="link-secondary" href="#">Resource</a></li>
@@ -267,7 +326,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5>Resources</h5>
+      <h5>Learn More</h5>
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="#">Business</a></li>
         <li><a class="link-secondary" href="#">Education</a></li>
@@ -276,7 +335,7 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex. </p>
       </ul>
     </div>
     <div class="col-6 col-md">
-      <h5>About</h5>
+      <h5>Get Involove</h5>
       <ul class="list-unstyled text-small">
         <li><a class="link-secondary" href="#">Team</a></li>
         <li><a class="link-secondary" href="#">Locations</a></li>
