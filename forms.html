@@ -1,176 +1,275 @@
-<style>
-  #question {
-    width: 20%;
-  }
-  .text-center {
-    padding: 5px;
-    background-color: #6200c3;
-    color: white;
-  }
-</style>
-<!-- find friend -->
-<link
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-  rel="stylesheet"
-/>
-<h3 class="mt-2 text-center">
-  Form: አዲስ ጓደኛ እፈልጋለሁ / በሚለው ስር ለሁለቱም ፆታ ይህ ፎርም ይግባ /
-</h3>
-<div class="container mt-5">
-  <div class="row">
-    <div
-      class="col-md-8 offset-md-2"
-      style="background-color: #f4f4f4; border-radius: 10px; padding: 29px"
-    >
-      <form class="custom-form" onsubmit="return validateForm()">
-        <!-- Question 1 -->
-        <div class="mb-3">
-          <label class="form-label"
-            >Question 1: Your Name. ስም / ከታች ያሉት 8 ነጥቦች ለሁለቱም ፆታ ያገለግላሉ/</label
-          >
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gender"
-              id="male"
-              value="male"
-              required
-            />
-            <label class="form-check-label" for="male">ታምራት</label>
-          </div>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              name="gender"
-              id="female"
-              value="female"
-              required
-            />
-            <label class="form-check-label" for="female">ታምርነሽ</label>
-          </div>
-          <div id="genderError" class="error-message"></div>
-        </div>
+<!DOCTYPE html>
 
-        <!-- Question 2 -->
-        <div class="mb-3">
-          <label for="question2" class="form-label"
-            >Question 2: Enter your code here. የፈለጉትን አንድ ወይም ሁለት ዲጂት ያለው ቁጥር
-            ያስገቡ/ ከተያዘ ቀይ ይሆናል ሌላ ይቀይሩ</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="code"
-            placeholder="enter code here"
-            required
-          />
-          <code style="border: #6200c3" class="text-center">Code</code>
-          <div id="codeError" class="error-message"></div>
-        </div>
-        <!-- Question 3 -->
-        <div class="mb-3">
-          <label for="question3" class="form-label"
-            >Question 3: Enter your age. እድሜ</label
-          >
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="age"
-            placeholder="enter age here"
-            required
-          />
-          <div id="ageError" class="error-message"></div>
-        </div>
+<body lang="en">
 
-        <!-- Question 4 -->
-        <div class="mb-3">
-          <label for="question4" class="form-label"
-            >Question 4: Enter your school. የት/ት ደረጃ
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="school"
-            placeholder="enter school"
-            required
-          />
-          <div id="schoolError" class="error-message"></div>
-        </div>
+  <head>
 
-        <!-- Question 5 -->
-        <div class="mb-3">
-          <label for="question5" class="form-label"
-            >Question 5: Enter your work. ሥራ
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="work"
-            placeholder="enter work"
-            required
-          />
-          <div id="workError" class="error-message"></div>
-        </div>
+    <style>
+      /* Custom styles for the first navbar */
+      .navbar-first {
+        padding: 15px;
+        /* Adjust padding */
+      }
 
-        <!-- Question 6 -->
-        <div class="mb-3">
-          <label for="question6" class="form-label"
-            >Question 6: Enter your Religion. ኃይማኖት
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="religion"
-            placeholder="enter religion"
-            required
-          />
-          <div id="religionError" class="error-message"></div>
-        </div>
+      .navbar-first .navbar-brand {
+        color: #007bff;
+        /* Logo text color */
+      }
 
-        <!-- Question 7 -->
-        <div class="mb-3">
-          <label for="question7" class="form-label"
-            >Question 7: Where do you live currently? አሁን የሚኖሩበት አገር
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="currentLocation"
-            placeholder="enter current location"
-            required
-          />
-          <div id="currentLocationError" class="error-message"></div>
-        </div>
+      .navbar-first .navbar-nav {
+        list-style-type: none;
+        /* Remove list-style-type */
+        display: flex;
+      }
 
-        <!-- Question 8 -->
-        <div class="mb-3">
-          <label for="question8" class="form-label"
-            >Question 8: Where do you plan in the future? ወደፊት የሚን የሩበት አገር
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="question"
-            name="futurePlan"
-            placeholder="enter future plan"
-            required
-          />
-          <div id="futurePlanError" class="error-message"></div>
+      .navbar-first .navbar-nav .nav-item {
+        margin-right: 10px;
+        /* Adjust margin between items */
+      }
+
+      .navbar-first .navbar-nav .nav-link {
+        color: #6200C3;
+        /* Item text color */
+        font-size: 20px;
+        /* Set font size */
+        transition: color 0.3s, background-color 0.3s;
+        /* Add transition effect */
+      }
+
+      .navbar-first .navbar-nav .nav-link:hover {
+        color: #6200C3 !important;
+        /* Hover color */
+        background-color: rgba(255,
+            255,
+            255,
+            0.308) !important;
+        /* Hover background color */
+      }
+
+      /* Custom styles for the second navbar */
+      .navbar-second {
+        /* Add additional styles for the second navbar if needed */
+        padding: 15px;
+        /* Adjust padding */
+      }
+
+
+
+      .navbar-second .navbar-nav .nav-link {
+        color: #6200C3;
+        /* Item text color */
+        font-size: 20px;
+        /* Set font size */
+      }
+
+      .navbar-second .navbar-nav .nav-link:hover {
+        color: #FFC107 !important;
+        /* Hover color */
+        background-color: white !important;
+        /* Hover background color */
+        background-color: rgba(255,
+            255,
+            255,
+            0.548) !important;
+        /* Hover background color */
+      }
+
+
+      /* mobile */
+      .navbar-toggler {
+        background-color: white !important;
+      }
+
+      .btn-primary {
+        background-color: #6200C3 !important;
+        border: none !important;
+        padding: 10px;
+      }
+
+      #question {
+        width: 20%;
+      }
+
+      .text-center {
+        padding: 5px;
+        background-color: #6200c3;
+        color: white;
+      }
+
+      .btn-primary {
+        background-color: #6200c3 !important;
+        border: none !important;
+      }
+
+      label:first-child {
+        color: #6200c3;
+      }
+
+      /* .form-check-input[type=radio] {
+    background-color: #6200c3 !important;
+  } */
+      .form-check-input:checked {
+        background-color: #6200c3 !important;
+        border: none !important;
+
+      }
+    </style>
+    <!-- find friend -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- First Navbar with Logo on Left and Two Items on Far Right -->
+    <nav class="navbar navbar-light navbar-first bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="assests/logo.svg" width="300px" /></a>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Membership</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-primary">
+              Give
+              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Second Navbar with Centered Items -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
+      <div class="container">
+        <!-- Hamburger icon for small screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mr-2" href="about.html">About Us</a>
+            </li>
+            <!-- <li class="nav-item">
+      							<a class="nav-link" href="#">Counsling</a>
+      						</li> -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Counseling
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="counseling.html">ላላገቡ</a>
+                <a class="dropdown-item" href="counseling.html">ላገቡ</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="match-seeker.html">Match-Seeker</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="forms.html">የእጮኝነት ት/ት እፈልጋለሁ</a>
+            </li>
+          </ul>
         </div>
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-      </form>
+      </div>
+    </nav>
+    <h3 class="mt-2 text-center">
+      Form: አዲስ ጓደኛ እፈልጋለሁ
+    </h3>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-8 offset-md-2" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+          <form class="custom-form" onsubmit="return validateForm()">
+            <!-- Question 1 -->
+            <div class="mb-3">
+              <label class="form-label">Question 1:<span>Your Name. ስም / ከታች ያሉት 8 ነጥቦች ለሁለቱም ፆታ ያገለግላሉ/</span>
+              </label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male" required />
+                <label class="form-check-label" for="male">ታምራት</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female" required />
+                <label class="form-check-label" for="female">ታምርነሽ</label>
+              </div>
+              <div id="genderError" class="error-message"></div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="mb-3">
+              <label for="question2" class="form-label">Question 2: Enter your code here. የፈለጉትን አንድ ወይም ሁለት ዲጂት ያለው ቁጥር
+                ያስገቡ/ ከተያዘ ቀይ ይሆናል ሌላ ይቀይሩ</label>
+              <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
+                required />
+              <code style="border: #6200c3" class="text-center">Code</code>
+              <div id="codeError" class="error-message"></div>
+            </div>
+            <!-- Question 3 -->
+            <div class="mb-3">
+              <label for="question3" class="form-label">Question 3: Enter your age. እድሜ</label>
+              <input type="text" class="form-control" id="question" name="age" placeholder="enter age here" required />
+              <div id="ageError" class="error-message"></div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="mb-3">
+              <label for="question4" class="form-label">Question 4: Enter your school. የት/ት ደረጃ
+              </label>
+              <input type="text" class="form-control" id="question" name="school" placeholder="enter school" required />
+              <div id="schoolError" class="error-message"></div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="mb-3">
+              <label for="question5" class="form-label">Question 5: Enter your work. ሥራ
+              </label>
+              <input type="text" class="form-control" id="question" name="work" placeholder="enter work" required />
+              <div id="workError" class="error-message"></div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="mb-3">
+              <label for="question6" class="form-label">Question 6: Enter your Religion. ኃይማኖት
+              </label>
+              <input type="text" class="form-control" id="question" name="religion" placeholder="enter religion"
+                required />
+              <div id="religionError" class="error-message"></div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="mb-3">
+              <label for="question7" class="form-label">Question 7: Where do you live currently? አሁን የሚኖሩበት አገር
+              </label>
+              <input type="text" class="form-control" id="question" name="currentLocation"
+                placeholder="enter current location" required />
+              <div id="currentLocationError" class="error-message"></div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="mb-3">
+              <label for="question8" class="form-label">Question 8: Where do you plan in the future? ወደፊት የሚን የሩበት አገር
+              </label>
+              <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                required />
+              <div id="futurePlanError" class="error-message"></div>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </form>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
+  </body>
+  <!-- bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  </html>
