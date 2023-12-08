@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" hreef="forms.html" />
+    <link rel="stylesheet" hreef="sessions.html" />
     <title>Salt of the Earth</title>
 </head>
 
@@ -69,12 +69,261 @@
                         <a class="nav-link" href="videos.html">Videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="forms.html">የእጮኝነት ት/ት እፈልጋለሁ</a>
+                        <a class="nav-link" href="sessions.html">የእጮኝነት ት/ት እፈልጋለሁ</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <h3 class="mt-2 text-center">
+        Form: counseling page
+    </h3>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+                <form class="custom-form" onsubmit="return validateForm()">
+                    <!-- Question 1 -->
+                    ላላገቡ:- Choose One position out of 12 questions
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q1" value="male" required />
+                        <label class="form-label" for="q1">Question 1:<span>እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?</span>
+                        </label>
+                        <div id="genderError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q2" value="male" required />
+                        <label for="question2" class="form-label" for="q2">Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ
+                            ?</label>
+                        <div id="codeError" class="error-message"></div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q3" value="male" required />
+                        <label for="question3" class="form-label" for="q3">Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ
+                            ?</label>
+                        <div id="ageError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q4" value="male" required />
+                        <label for="question4" class="form-label" for="q4">Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን
+                            ምን ናቸው ?
+                        </label>
+
+                        <div id="schoolError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q5" value="male" required />
+
+                        <label for="question5" class="form-label" for="q5">Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል
+                            ጊዜስ
+                            በእጮኝምነት እንቆይ ?/
+                        </label>
+                        <div id="workError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q6" value="male" required />
+
+                        <label for="question6" class="form-label" for="q6">Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን
+                            ናቸው ?
+                        </label>
+
+                        <div id="religionError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q7" value="male" required />
+
+                        <label for="question7" class="form-label" for="q7">Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር
+                            ይኖርብናል ወይ ?
+                        </label>
+
+                        <div id="currentLocationError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q8" value="male" required />
+
+                        <label for="question8" class="form-label" for="q8">Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት
+                            እችላለሁ ወይ ?
+                        </label>
+
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 9 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q9" value="male" required />
+
+                        <label for="question8" class="form-label" for="q9">Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት
+                            ብንሞካከርስ
+                        </label>
+
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 10 -->
+                    <div class="mb-3">
+                        <input class="form-check-input" type="radio" name="gender" id="q10" value="male" required />
+
+                        <label for="question8" class="form-label" for="q10">Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና
+                            የእርግዝና መከላከያ
+                            መጠቀም ኃጢያት ነው ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 11 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል
+                            ያስፈልጋል ወይ ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 12 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /
+                            ፎርም
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    / ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+                <form class="custom-form" onsubmit="return validateForm()">
+                    <!-- Question 1 -->
+                    ላገቡ:- Choose One position out of 12 questions / ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
+                    <div class="mb-3">
+                        <label class="form-label">Question 1:<span>በተጋባን በመጀመሪያው አመት ላይ የሚታዩ አዳድስ ባህሪያት እንዴት መቋቋም
+                                ይቻላል?</span>
+                        </label>
+                        <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
+                            required />
+                        <div id="genderError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 2 -->
+                    <div class="mb-3">
+                        <label for="question2" class="form-label">Question 2: በጋብቻ ውስጥ የእርግዝና መከላከያ መጠቀም ይቻላል ?</label>
+                        <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
+                            required />
+
+                        <div id="codeError" class="error-message"></div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="mb-3">
+                        <label for="question3" class="form-label">Question 3: ልጆቻችንን በአንድ ላይ ተባብረን ማሳደግ አቃተን ምን እናድርግ
+                            ?</label>
+                        <input type="text" class="form-control" id="question" name="age" placeholder="enter age here"
+                            required />
+                        <div id="ageError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="mb-3">
+                        <label for="question4" class="form-label">Question 4: በገንዘብ ጉዳይ መስማማት አቃተን ምን እናድርግ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="school" placeholder="enter school"
+                            required />
+                        <div id="schoolError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="mb-3">
+                        <label for="question5" class="form-label">Question 5: በግብረስጋ ግንኙነት መጣጣም አቃተን ምን እናድርግ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="work" placeholder="enter work"
+                            required />
+                        <div id="workError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="mb-3">
+                        <label for="question6" class="form-label">Question 6: ተስማምተን በደስታ መኖር አቃተን ምን እናድርግ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="religion"
+                            placeholder="enter religion" required />
+                        <div id="religionError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="mb-3">
+                        <label for="question7" class="form-label">Question 7: የወላጆችን መጥፎ ጣልቃ ገብነት እንዴት ማስቆም ይቻላል?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="currentLocation"
+                            placeholder="enter current location" required />
+                        <div id="currentLocationError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 8: ስለ ፍቺ የምድራዊና የሰማያዊ ህጉ ምን ይላል ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 9 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 9: የባልና የሚስት የግልና የጋራ ኃላፊነቶች ምን ምን ናቸው ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 10 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 10: ስለ መካንነትና ማስወረድ ምክራችሁ ምንድን ነው ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 11 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 11: ስለ ፖርኖግራፊና ኤች አይ ቪ ኤይድስ ምን ምክር አላችሁ ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 12 -->
+                    <div class="mb-3">
+                        <label for="question8" class="form-label">Question 12: ሁለተኛ ስለ ማግባት ምን ምክር አላችሁ ?
+                        </label>
+                        <input type="text" class="form-control" id="question" name="futurePlan"
+                            placeholder="enter future plan" required />
+                        <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     Under counseling page
     ላላገቡ
@@ -106,23 +355,6 @@
     o Zelle -------- Visa card-------paypal-----Cashup------western
     union_______
 
-    ላገቡ
-    1. በተጋባን በመጀመሪያው አመት ላይ የሚታዩ አዳድስ ባህሪያት እንዴት መቋቋም ይቻላል?
-    2. በጋብቻ ውስጥ የእርግዝና መከላከያ መጠቀም ይቻላል ?
-    3. ልጆቻችንን በአንድ ላይ ተባብረን ማሳደግ አቃተን ምን እናድርግ ?
-    4. በገንዘብ ጉዳይ መስማማት አቃተን ምን እናድርግ?
-    5. በግብረስጋ ግንኙነት መጣጣም አቃተን ምን እናድርግ?
-    6. ተስማምተን በደስታ መኖር አቃተን ምን እናድርግ?
-    7. የወላጆችን መጥፎ ጣልቃ ገብነት እንዴት ማስቆም ይቻላል?
-    8. ስለ ፍቺ የምድራዊና የሰማያዊ ህጉ ምን ይላል ?
-    9. የባልና የሚስት የግልና የጋራ ኃላፊነቶች ምን ምን ናቸው ?
-    10. ስለ መካንነትና ማስወረድ ምክራችሁ ምንድን ነው ?
-    11. ስለ ፖርኖግራፊና ኤች አይ ቪ ኤይድስ ምን ምክር አላችሁ ?
-    12. ሁለተኛ ስለ ማግባት ምን ምክር አላችሁ ?
-    ፎርም
-     ምርጫ
-    o ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
-    ________________
 
      ክፍያ
 
