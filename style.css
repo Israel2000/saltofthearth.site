@@ -180,3 +180,23 @@ div.card-body {
 .btn-outline-secondary {
   color: #6200c3;
 }
+
+/* soical media */
+.social-icon {
+  color: #888; /* Grey color for the icons */
+  font-size: 2em; /* Adjust the font size as needed */
+  margin: 0 10px; /* Adjust the spacing between icons as needed */
+  transition: color 0.3s; /* Smooth transition for the color change */
+}
+
+.social-icon:hover {
+  color: #007bff; /* Primary color on hover */
+}
+
+.btn-outline-secondary {
+  color: #6200c3 !important;
+}
+.btn-outline-secondary:hover {
+  background-color: white !important;
+  color: #6200c3 !important;
+}
