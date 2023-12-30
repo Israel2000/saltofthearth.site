@@ -3,14 +3,14 @@
 -------------------------------------------------- */
 /* Carousel base class */
 /* 
-
-
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
 }
-
+.navbar-nav .nav-item {
+  margin-right: 30px !important;
+}
 /* Declare heights because of positioning of img element */
 .carousel-item {
   height: 32rem;
@@ -199,4 +199,16 @@ div.card-body {
 .btn-outline-secondary:hover {
   background-color: white !important;
   color: #6200c3 !important;
+}
+/* home */
+.link-secondary {
+  text-decoration: none;
+}
+a.link-secondary:hover {
+  color: #6200c3 !important;
+  font-weight: bold;
+}
+/* video css */
+.bg-body-tertiary {
+  background-color: #6200c3 !important;
 }

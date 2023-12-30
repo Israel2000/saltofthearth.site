@@ -3,162 +3,171 @@
 <body lang="en">
 
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" hreef="sessions.html" />
+    <title>Salt of the Earth</title>
+  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Custom styles can be added here */
+    .flex-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px;
+    }
 
-    <style>
-      /* Custom styles can be added here */
-      .flex-container {
-        display: flex;
-        justify-content: space-between;
-        margin: 20px;
-      }
+    .left-flex-section {
+      flex: 0 0 75%;
+      /* 75% width, don't grow or shrink */
+      /* padding: 20px; */
+      /* border: 1px solid #ddd; */
+    }
 
-      .left-flex-section {
-        flex: 0 0 75%;
-        /* 75% width, don't grow or shrink */
-        /* padding: 20px; */
-        /* border: 1px solid #ddd; */
-      }
+    .right-flex-section {
+      flex: 1;
+      padding: 20px;
+      /* border: 1px solid #ddd; */
+      border-radius: 10px;
+      margin-left: 10px;
+      /* Adjust margin as needed */
+    }
 
-      .right-flex-section {
-        flex: 1;
-        padding: 20px;
-        /* border: 1px solid #ddd; */
-        border-radius: 10px;
-        margin-left: 10px;
-        /* Adjust margin as needed */
-      }
+    /* Custom styles for the first navbar */
+    .navbar-first {
+      padding: 15px;
+      /* Adjust padding */
+    }
 
-      /* Custom styles for the first navbar */
-      .navbar-first {
-        padding: 15px;
-        /* Adjust padding */
-      }
+    .navbar-first .navbar-brand {
+      color: #007bff;
+      /* Logo text color */
+    }
 
-      .navbar-first .navbar-brand {
-        color: #007bff;
-        /* Logo text color */
-      }
+    .navbar-first .navbar-nav {
+      list-style-type: none;
+      /* Remove list-style-type */
+      display: flex;
+    }
 
-      .navbar-first .navbar-nav {
-        list-style-type: none;
-        /* Remove list-style-type */
-        display: flex;
-      }
+    .navbar-first .navbar-nav .nav-item {
+      margin-right: 10px;
+      /* Adjust margin between items */
+    }
 
-      .navbar-first .navbar-nav .nav-item {
-        margin-right: 10px;
-        /* Adjust margin between items */
-      }
+    .navbar-first .navbar-nav .nav-link {
+      color: #6200C3;
+      /* Item text color */
+      font-size: 20px;
+      /* Set font size */
+      transition: color 0.3s, background-color 0.3s;
+      /* Add transition effect */
+    }
 
-      .navbar-first .navbar-nav .nav-link {
-        color: #6200C3;
-        /* Item text color */
-        font-size: 20px;
-        /* Set font size */
-        transition: color 0.3s, background-color 0.3s;
-        /* Add transition effect */
-      }
+    .navbar-first .navbar-nav .nav-link:hover {
+      color: #6200C3 !important;
+      /* Hover color */
+      background-color: rgba(255,
+          255,
+          255,
+          0.308) !important;
+      /* Hover background color */
+    }
 
-      .navbar-first .navbar-nav .nav-link:hover {
-        color: #6200C3 !important;
-        /* Hover color */
-        background-color: rgba(255,
-            255,
-            255,
-            0.308) !important;
-        /* Hover background color */
-      }
-
-      /* Custom styles for the second navbar */
-      .navbar-second {
-        /* Add additional styles for the second navbar if needed */
-        padding: 15px;
-        /* Adjust padding */
-      }
-
-
-
-      .navbar-second .navbar-nav .nav-link {
-        color: #6200C3;
-        /* Item text color */
-        font-size: 20px;
-        /* Set font size */
-      }
-
-      .navbar-second .navbar-nav .nav-link:hover {
-        color: #FFC107 !important;
-        /* Hover color */
-        background-color: white !important;
-        /* Hover background color */
-        background-color: rgba(255,
-            255,
-            255,
-            0.548) !important;
-        /* Hover background color */
-      }
+    /* Custom styles for the second navbar */
+    .navbar-second {
+      /* Add additional styles for the second navbar if needed */
+      padding: 15px;
+      /* Adjust padding */
+    }
 
 
-      /* mobile */
-      .navbar-toggler {
-        background-color: white !important;
-      }
 
-      .btn-primary {
-        background-color: #6200C3 !important;
-        border: none !important;
-        padding: 10px;
-      }
+    .navbar-second .navbar-nav .nav-link {
+      color: #6200C3;
+      /* Item text color */
+      font-size: 20px;
+      /* Set font size */
+    }
 
-      #question {
-        width: 30%;
-      }
+    .navbar-second .navbar-nav .nav-link:hover {
+      color: #FFC107 !important;
+      /* Hover color */
+      background-color: white !important;
+      /* Hover background color */
+      background-color: rgba(255,
+          255,
+          255,
+          0.548) !important;
+      /* Hover background color */
+    }
 
-      .text-center {
-        padding: 5px;
-        background-color: #6200c3;
-        color: white;
-      }
 
-      .btn-primary {
-        background-color: #6200c3 !important;
-        border: none !important;
-      }
+    /* mobile */
+    .navbar-toggler {
+      background-color: white !important;
+    }
 
-      label:first-child {
-        color: #6200c3;
-      }
+    .btn-primary {
+      background-color: #6200C3 !important;
+      border: none !important;
+      padding: 10px;
+    }
 
-      /* .form-check-input[type=radio] {
+    #question {
+      width: 30%;
+    }
+
+    .text-center {
+      padding: 5px;
+      background-color: #6200c3;
+      color: white;
+    }
+
+    .btn-primary {
+      background-color: #6200c3 !important;
+      border: none !important;
+    }
+
+    label:first-child {
+      color: #6200c3;
+    }
+
+    /* .form-check-input[type=radio] {
     background-color: #6200c3 !important;
   } */
-      .form-check-input:checked {
-        background-color: #6200c3 !important;
-        border: none !important;
+    .form-check-input:checked {
+      background-color: #6200c3 !important;
+      border: none !important;
 
-      }
-    </style>
-    <!-- find friend -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  </head>
+    }
+  </style>
+  <!-- find friend -->
+
+
 
   <body>
     <!-- First Navbar with Logo on Left and Two Items on Far Right -->
     <nav class="navbar navbar-light navbar-first bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="assests/logo.svg" width="300px" /></a>
+        <a class="navbar-brand" href="index.html"><img src="assests/logo.svg" width="300px" /></a>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Membership</a>
+            <a class="nav-link" href="membersignin.html">Membership</a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-primary">
-              Give
-              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i>
-            </button>
+
+            <a type="button" class="btn btn-primary" class="nav-link" href="donation.html">Give <i
+                class="fa fa-heart text-warning" style="margin-left: 10px"></i></a>
           </li>
         </ul>
       </div>
     </nav>
+
     <!-- Second Navbar with Centered Items -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
       <div class="container">
@@ -170,41 +179,37 @@
 
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+            <li class="nav-item mb-2">
+              <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2">
               <a class="nav-link mr-2" href="about.html">About Us</a>
             </li>
-            <!-- <li class="nav-item">
-      							<a class="nav-link" href="#">Counsling</a>
-      						</li> -->
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mb-2">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Counseling
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border: none;">
                 <a class="dropdown-item" href="counseling.html">ላላገቡ</a>
                 <a class="dropdown-item" href="counseling.html">ላገቡ</a>
-                <!-- <div class="dropdown-divider"></div> -->
-                <!-- <a class="dropdown-item" href="#">Something else here</a> -->
               </div>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2">
               <a class="nav-link" href="blog.html">Blog</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2">
               <a class="nav-link" href="videos.html">Videos</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2">
               <a class="nav-link" href="sessions.html">ጓደኛ እፈልጋለሁ</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <h3 class="mt-2 text-center">
+
+    <h3 class="text-center">
       Form: አዲስ ጓደኛ እፈልጋለሁ
     </h3>
 
