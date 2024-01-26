@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Salt of the Earth</title>
+</head>
+<style>
+    .rounded-3 {
+        background-color: #6200c3;
+    }
+</style>
+
+<body>
+    <!-- First Navbar with Logo on Left and Two Items on Far Right -->
+    <nav class="navbar navbar-light navbar-first bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="assests/logo.svg" width="300px" /></a>
+            <ul class="navbar-nav ms-auto">
+                <!-- <li class="nav-item">
+          <a class="nav-link" href="membersignin.html">Membership</a>
+        </li> -->
+                <li class="nav-item">
+                    <a type="button" class="btn btn-primary" class="nav-link" href="donation.html">Give <i
+                            class="fa fa-heart text-warning" style="margin-left: 10px"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Second Navbar with Centered Items -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
+        <div class="container">
+            <!-- Hamburger icon for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link mr-2" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="videos.html">Videos</a>
+                    </li>
+                    <li class="nav-item dropdown mb-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Counseling
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border: 1px solid #6200c3;">
+                            <a class="dropdown-item" href="counseling.html">ላላገቡ</a>
+                            <a class="dropdown-item" href="counseling.html">ላገቡ</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link" href="sessions.html">አዲስ ጓደኛ እፈልጋለሁ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h2>Contact Us</h2>
+                <form class="pt-2">
+                    <div class="form-group mt-2">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="5"
+                            placeholder="What can we help you with?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr class="w-100">
+    <!-- footer -->
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <img src="assests/logo.svg" width="300px">
+
+                <!-- Social Media Section -->
+                <div class="container-fluid social-media-section mt-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <span style="color: #6200c3; font-size: 14px;">Follow Us on Social Media</span>
+                            <!-- Add your social media icons or links here -->
+                            <p>
+                                <!-- Facebook icon -->
+                                <a href="https://www.facebook.com/yourfacebookpage" target="_blank"
+                                    class="social-icon facebook-icon"><i class="fab fa-facebook-square"></i></a>
+                                <!-- Example: Twitter icon -->
+                                <a href="https://twitter.com/yourtwitterhandle" target="_blank"
+                                    class="social-icon twitter-icon"><i class="fab fa-twitter-square"></i></a>
+                            </p> <small class="d-block mb-3 text-muted">&copy;2024 Salt Of The Earth.</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">What is SEICM?</a></li>
+                    <li><a class="link-secondary" href="#">Faith</a></li>
+                    <li><a class="link-secondary" href="#">A Message from Founder</a></li>
+                    <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                    <li><a class="link-secondary" href="#">News</a></li>
+                    <li><a class="link-secondary" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Teaching</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Counseling</a></li>
+                    <li><a class="link-secondary" href="#">Marriage Course</a></li>
+                    <!-- <li><a class="link-secondary" href="#">Another resource</a></li>
+            <li><a class="link-secondary" href="#">Final resource</a></li> -->
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Learn More</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Books Recommanded</a></li>
+                    <li><a class="link-secondary" href="#">Resources</a></li>
+                    <li><a class="link-secondary" href="#">Common Questions</a></li>
+                    <!-- <li><a class="link-secondary" href="#">Terms</a></li> -->
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Get Invloved</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="link-secondary" href="#">Donate</a></li>
+                    <li><a class="link-secondary" href="#">Events</a></li>
+                    <li><a class="link-secondary" href="contact.html">contact</a></li>
+                    <!-- <li><a class="link-secondary" href="#">Gaming</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="forms-scripts.js"></script>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
