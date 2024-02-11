@@ -9,7 +9,7 @@
     <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" hreef="sessions.html" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Salt of the Earth</title>
   </head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
@@ -122,10 +122,11 @@
       width: 30%;
     }
 
-    .text-center {
+    .text-center-sessions {
       padding: 5px;
       background-color: #6200c3;
       color: white;
+  text-align: center;
     }
 
     .btn-primary {
@@ -146,21 +147,17 @@
 
     }
   </style>
-  <!-- find friend -->
-
-
-
+  
   <body>
     <!-- First Navbar with Logo on Left and Two Items on Far Right -->
     <nav class="navbar navbar-light navbar-first bg-light">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assests/logo.svg" width="300px" /></a>
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-link" href="membersignin.html">Membership</a>
-          </li>
+          </li> -->
           <li class="nav-item">
-
             <a type="button" class="btn btn-primary" class="nav-link" href="donation.html">Give <i
                 class="fa fa-heart text-warning" style="margin-left: 10px"></i></a>
           </li>
@@ -210,8 +207,33 @@
     </div>
   </nav>
 
-
-    <h3 class="text-center">
+  አዲስ ጓደኛ እፈልጋለሁ
+  1. የእርስዎ ስም ___________
+  2. የእርስዎ እድሜ ________
+  3. የእርስዎ የት/ት ደረጃ ________
+  4. የእርስዎ ሥራ ___________
+  5. የእርስዎ ኃይማኖት ________
+  6. አሁን የሚኖሩበት አገር __________
+  7. ወደፊት የሚኖሩበት አገር _________.
+  8. የእርስዎ ስልክ _______________
+  9. የእርስዎ ኢሜል ________________. Submit
+  መተዋወቅ የምፈልገው ሰው
+  1. ፆታ ________
+  2. እድሜ. ከ ________ እስከ __________
+  3. የት/ት ደረጃ. ________
+  4. ሥራ ________
+  5. ኃይማኖት. ________
+  6. ወደፊት የምንኖርበት አገር _________. Submit
+  Payment form . Submit
+   Debit card
+   Zelle
+   Paypal
+   Cashup
+   Western union Submit
+  የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝና የ3 ሰዎች አድራሻው ይደርሰዋል።
+  ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
+  ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት
+    <h3 class="text-center-sessions">
       Form: አዲስ ጓደኛ እፈልጋለሁ
     </h3>
 
@@ -224,20 +246,13 @@
           <!-- Content for the first flexbox section -->
           <!-- <h3>Section 1</h3> -->
           <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
-            <form class="custom-form" onsubmit="return validateForm()">
+            <form class="custom-form" >
               <!-- Question 1 -->
               <div class="mb-3">
-                <label class="form-label">Question 1:<span>Your Name. ስም / ከታች ያሉት 8 ነጥቦች ለሁለቱም ፆታ ያገለግላሉ/</span>
-                </label>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gender" id="male" value="male" required />
-                  <label class="form-check-label" for="male">ታምራት</label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gender" id="female" value="female" required />
-                  <label class="form-check-label" for="female">ታምርነሽ</label>
-                </div>
-                <div id="genderError" class="error-message"></div>
+                <span class="form-label">Question 1: <span>የእርስዎ ስም</span>
+                </span>
+                <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
+                required />
               </div>
 
               <!-- Question 2 -->
@@ -317,26 +332,7 @@
       </div>
     </div>
 
-    <!-- መተዋወቅ እፈልጋለሁ / የሚለውን ክሊክ ሲያደርጉ /ከላይ ያለው ፎርም እንደገና ይመጣላቸዋል /
-1. ስም ታምራት እና ታምርነሽ /
-2. ኮድ __________ / የፈለጉትን አንድ ወይም ሁለት ዲጂት ያለው ቁጥር ያስገቡ/ ከተያዘ ቀይ ይሆናል ሌላ
-ይቀይሩ
-3. እድሜ_________
-4. የት/ት ደረጃ ________
-5. ሥራ ___________
-6. ኃይማኖት ________
-7. አሁን የሚኖሩበት አገር __________
-8. ወደፊት የሚን የሩበት አገር _________. Submit
-ከላይ ያለውን ሞልተው ሰብሚት ሲያደርጉ የክፍያ ፓጅ ከሚኒስትርይ አካውንት አድራሻ ጋር ይደርሳቸዋል
- Zelle PayPal. Cash app bank western union
- የእነርሱ ስልክ______
- የእነርሱ ኢሜል _______.
- የተመረጠው ሰው ኮድ ________ Submit. ሲያደርጉ ኮንፈርሜሽን ደረሰኝ ከእኛ ሙሉ አድራሻ ጋር
-ለእነርሱም ለእኛም እንዲሁም የተመረጠው ሰው ስልክ ቁጥር ለመራጩ ይላካል፤
- ቢሮው በየጊዜው የተመራረጡ ሰዎችን እየደወለ ያነጋግራል ይመክራል
-መጨረሻ ላይ ከሚላክላቸው ደረሰኝ ጋር ቀጣዩ ማስታወሻ ይላክላቸው / ከተመራረጣችሁና ከተነጋግራችሁ
-በኋላ ወደ መጀመሪያው የዌብሳይት ፔጅ ሂዱና “ የእጮኝነት ት/ት እፈልጋለሁ “ የሚለውን ፎርም በመሙላት
-ከመጋቢ ደመወዝ ጋራ የ4 ሳምንት ካልስ ይውሰዱ / -->
+ 
 
     <div class="container mt-5">
       <h2>Registration Form</h2>
@@ -396,46 +392,62 @@
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
-
           <img src="assests/logo.svg" width="300px">
-          <small class="d-block mb-3 text-muted">&copy; 2024 Salt Of The Earth.</small>
+  
+          <!-- Social Media Section -->
+          <div class="container-fluid social-media-section mt-3">
+            <div class="row">
+              <div class="col-12 text-center">
+                <span style="color: #6200c3; font-size: 14px;">Follow Us on Social Media</span>
+                <!-- Add your social media icons or links here -->
+                <p>
+                  <!-- Facebook icon -->
+                  <a href="https://www.facebook.com/yourfacebookpage" target="_blank" class="social-icon facebook-icon"><i
+                      class="fab fa-facebook-square"></i></a>
+                  <!-- Example: Twitter icon -->
+                  <a href="https://twitter.com/yourtwitterhandle" target="_blank" class="social-icon twitter-icon"><i
+                      class="fab fa-twitter-square"></i></a>
+                </p> <small class="d-block mb-3 text-muted">&copy;2024 Salt Of The Earth.</small>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-6 col-md">
           <h5>About</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Cool stuff</a></li>
-            <li><a class="link-secondary" href="#">Random feature</a></li>
-            <li><a class="link-secondary" href="#">Team feature</a></li>
+            <li><a class="link-secondary" href="#">What is SEICM?</a></li>
+            <li><a class="link-secondary" href="#">Faith</a></li>
+            <li><a class="link-secondary" href="#">A Message from Founder</a></li>
             <li><a class="link-secondary" href="#">Stuff for developers</a></li>
-            <li><a class="link-secondary" href="#">Another one</a></li>
-            <li><a class="link-secondary" href="#">Last time</a></li>
+            <li><a class="link-secondary" href="#">News</a></li>
+            <li><a class="link-secondary" href="#">Contact</a></li>
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Teaching</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Resource name</a></li>
-            <li><a class="link-secondary" href="#">Resource</a></li>
-            <li><a class="link-secondary" href="#">Another resource</a></li>
-            <li><a class="link-secondary" href="#">Final resource</a></li>
+            <li><a class="link-secondary" href="#">Counseling</a></li>
+            <li><a class="link-secondary" href="#">Marriage Course</a></li>
+            <!-- <li><a class="link-secondary" href="#">Another resource</a></li>
+              <li><a class="link-secondary" href="#">Final resource</a></li> -->
           </ul>
         </div>
         <div class="col-6 col-md">
           <h5>Learn More</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Business</a></li>
-            <li><a class="link-secondary" href="#">Education</a></li>
-            <li><a class="link-secondary" href="#">Government</a></li>
-            <li><a class="link-secondary" href="#">Gaming</a></li>
+            <li><a class="link-secondary" href="#">Books Recommanded</a></li>
+            <li><a class="link-secondary" href="#">Resources</a></li>
+            <li><a class="link-secondary" href="#">Common Questions</a></li>
+            <!-- <li><a class="link-secondary" href="#">Terms</a></li> -->
           </ul>
         </div>
         <div class="col-6 col-md">
-          <h5>Get Involove</h5>
+          <h5>Get Invloved</h5>
           <ul class="list-unstyled text-small">
-            <li><a class="link-secondary" href="#">Team</a></li>
-            <li><a class="link-secondary" href="#">Locations</a></li>
-            <li><a class="link-secondary" href="#">Privacy</a></li>
-            <li><a class="link-secondary" href="#">Terms</a></li>
+            <li><a class="link-secondary" href="#">Donate</a></li>
+            <li><a class="link-secondary" href="#">Events</a></li>
+            <li><a class="link-secondary" href="contact.html">Contact</a></li>
+            <!-- <li><a class="link-secondary" href="#">Gaming</a></li> -->
           </ul>
         </div>
       </div>
