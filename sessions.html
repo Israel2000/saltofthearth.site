@@ -14,20 +14,6 @@
   </head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    /* Custom styles can be added here */
-    .flex-container {
-      display: flex;
-      justify-content: space-between;
-      margin: 20px;
-    }
-
-    .left-flex-section {
-      flex: 0 0 75%;
-      /* 75% width, don't grow or shrink */
-      /* padding: 20px; */
-      /* border: 1px solid #ddd; */
-    }
-
     .right-flex-section {
       flex: 1;
       padding: 20px;
@@ -85,8 +71,6 @@
       /* Adjust padding */
     }
 
-
-
     .navbar-second .navbar-nav .nav-link {
       color: #6200C3;
       /* Item text color */
@@ -119,14 +103,14 @@
     }
 
     #question {
-      width: 30%;
+      width: 71%;
     }
 
     .text-center-sessions {
       padding: 5px;
       background-color: #6200c3;
       color: white;
-  text-align: center;
+      text-align: center;
     }
 
     .btn-primary {
@@ -138,14 +122,44 @@
       color: #6200c3;
     }
 
-    /* .form-check-input[type=radio] {
-    background-color: #6200c3 !important;
-  } */
-    .form-check-input:checked {
-      background-color: #6200c3 !important;
-      border: none !important;
+    .outer-flex-container {
+  display: flex;
+  width: 90%;
+}
 
-    }
+.flex-column {
+  flex: 1;
+}
+
+.inner-flex-container {
+  display: flex;
+}
+
+.inner-flex-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-item {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+}
+
+/* input css gender */
+.input-container {
+  display: flex;
+}
+
+.input-item {
+  flex: 1;
+  margin-right: 10px; /* Adjust spacing between items */
+}
+
+input[type="text"] {
+  width: 100%; /* Ensure inputs take up full width of their container */
+}
   </style>
   
   <body>
@@ -207,136 +221,202 @@
     </div>
   </nav>
 
-  አዲስ ጓደኛ እፈልጋለሁ
-  1. የእርስዎ ስም ___________
-  2. የእርስዎ እድሜ ________
-  3. የእርስዎ የት/ት ደረጃ ________
-  4. የእርስዎ ሥራ ___________
-  5. የእርስዎ ኃይማኖት ________
-  6. አሁን የሚኖሩበት አገር __________
-  7. ወደፊት የሚኖሩበት አገር _________.
-  8. የእርስዎ ስልክ _______________
-  9. የእርስዎ ኢሜል ________________. Submit
-  መተዋወቅ የምፈልገው ሰው
-  1. ፆታ ________
-  2. እድሜ. ከ ________ እስከ __________
-  3. የት/ት ደረጃ. ________
-  4. ሥራ ________
-  5. ኃይማኖት. ________
-  6. ወደፊት የምንኖርበት አገር _________. Submit
-  Payment form . Submit
+  Payment form . 
    Debit card
    Zelle
    Paypal
    Cashup
    Western union Submit
-  የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝና የ3 ሰዎች አድራሻው ይደርሰዋል።
-  ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
-  ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት
+
     <h3 class="text-center-sessions">
       Form: አዲስ ጓደኛ እፈልጋለሁ
     </h3>
 
-
-    <div class="container">
-      <!-- <h2>Two Flexbox Sections</h2> -->
-
-      <div class="flex-container">
-        <div class="left-flex-section">
-          <!-- Content for the first flexbox section -->
-          <!-- <h3>Section 1</h3> -->
-          <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+<!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- Left inner flex container column 1 -->
+          <div class="flex-item">
+            <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+            <h5>አዲስ ጓደኛ እፈልጋለሁ</h5>
             <form class="custom-form" >
               <!-- Question 1 -->
-              <div class="mb-3">
-                <span class="form-label">Question 1: <span>የእርስዎ ስም</span>
-                </span>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
-                required />
+               <div class="mb-3">
+                <label for="question2" class="form-label">Question 1: የእርስዎ ስም</label>
+                <input type="text" class="form-control" id="question" placeholder="enter code here" required />
+                <div id="codeError" class="error-message"></div>
               </div>
 
               <!-- Question 2 -->
               <div class="mb-3">
-                <label for="question2" class="form-label">Question 2: Enter your code here. የፈለጉትን አንድ ወይም ሁለት ዲጂት ያለው
-                  ቁጥር
-                  ያስገቡ/ ከተያዘ ቀይ ይሆናል ሌላ ይቀይሩ</label>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter code here"
-                  required />
-                <code style="border: #6200c3" class="text-center">Code</code>
+                <label for="question2" class="form-label">Question 2: የእርስዎ እድሜ</label>
+                <input type="text" class="form-control" id="question" name="code" placeholder="enter your age" required />
                 <div id="codeError" class="error-message"></div>
               </div>
+
               <!-- Question 3 -->
               <div class="mb-3">
-                <label for="question3" class="form-label">Question 3: Enter your age. እድሜ</label>
-                <input type="text" class="form-control" id="question" name="age" placeholder="enter age here"
-                  required />
-                <div id="ageError" class="error-message"></div>
+                <label for="question3" class="form-label">Question 3: የእርስዎ የት/ት ደረጃ</label>
+                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level" required />
+                <div id="codeError" class="error-message"></div>
               </div>
 
               <!-- Question 4 -->
               <div class="mb-3">
-                <label for="question4" class="form-label">Question 4: Enter your school. የት/ት ደረጃ
+                <label for="question4" class="form-label">Question 4: የእርስዎ ሥራ
                 </label>
-                <input type="text" class="form-control" id="question" name="school" placeholder="enter school"
+                <input type="text" class="form-control" id="question" name="school" placeholder="enter your job title"
                   required />
-                <div id="schoolError" class="error-message"></div>
               </div>
 
               <!-- Question 5 -->
               <div class="mb-3">
-                <label for="question5" class="form-label">Question 5: Enter your work. ሥራ
+                <label for="question5" class="form-label">Question 5: የእርስዎ ኃይማኖት 
                 </label>
-                <input type="text" class="form-control" id="question" name="work" placeholder="enter work" required />
-                <div id="workError" class="error-message"></div>
+                <input type="text" class="form-control" id="question" name="work" placeholder="enter your religion" required />
               </div>
 
               <!-- Question 6 -->
               <div class="mb-3">
-                <label for="question6" class="form-label">Question 6: Enter your Religion. ኃይማኖት
+                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
                 </label>
-                <input type="text" class="form-control" id="question" name="religion" placeholder="enter religion"
+                <input type="text" class="form-control" id="question" name="religion" placeholder="enter where you live"
                   required />
                 <div id="religionError" class="error-message"></div>
               </div>
 
               <!-- Question 7 -->
               <div class="mb-3">
-                <label for="question7" class="form-label">Question 7: Where do you live currently? አሁን የሚኖሩበት አገር
+                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
                 </label>
                 <input type="text" class="form-control" id="question" name="currentLocation"
-                  placeholder="enter current location" required />
+                  placeholder="enter where you live in the future" required />
                 <div id="currentLocationError" class="error-message"></div>
               </div>
 
               <!-- Question 8 -->
               <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: Where do you plan in the future? ወደፊት የሚን የሩበት አገር
+                <label for="question8" class="form-label">Question 8: የእርስዎ ስልክ
                 </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter your phone" required />
+                <div id="futurePlanError" class="error-message"></div>
+              </div>
+
+              <!-- Question 9 -->
+              <div class="mb-3">
+                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
+                </label>
+                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter @email"
                   required />
                 <div id="futurePlanError" class="error-message"></div>
               </div>
               <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary mt-2" style="width: 231px;">Next -></button>
             </form>
           </div>
+          </div>
         </div>
+        <!-- ------------0000000000000 -->
+        <div class="col-lg-6">
+          <!-- Left inner flex container column 2 -->
+          <div class="flex-item">
+             <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+               <h5>መተዋወቅ የምፈልገው ሰው</h5> 
+            <form class="custom-form" >
+              <!-- Question 1 -->
+               <div class="mb-3">
+                <label for="question2" class="form-label">Question 1: ፆታ</label>
+                <input type="text" class="form-control" id="question" name="code" placeholder="enter gender"
+                  required />
+                <div id="codeError" class="error-message"></div>
+              </div>
 
-        <div class="right-flex-section">
-          <!-- Content for the second flexbox section -->
-          <h3><a style="color:#6200C3!important" href="/">መተዋወቅ እፈልጋለሁ</a></h3>
-          <p>Click here if you want to me new friend.</p>
-          <h3><a style="color:#6200C3!important" href="/">አዲስ ጓደኛ እፈልጋለሁ</a></h3>
-          <p>Click here if you new want to meet for first time.</p>
+              <!-- Question 2 -->
+              <div class="mb-3">
+                <label for="question2" class="form-label">Question 2: እድሜ</label>
+                <div class="input-container">
+                  <div class="input-item">
+                    <input type="text" class="form-control" placeholder="min age">
+                  </div>
+                  <div class="input-item">
+                    <input type="text" class="form-control" placeholder="max age">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question 3 -->
+              <div class="mb-3">
+                <label for="question3" class="form-label">Question 3: የት/ት ደረጃ</label>
+                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level"
+                  required />
+              </div>
+
+              <!-- Question 4 -->
+              <div class="mb-3">
+                <label for="question4" class="form-label">Question 4: ሥራ
+                </label>
+                <input type="text" class="form-control" id="question" name="school" placeholder="enter school"
+                  required />
+              </div>
+
+              <!-- Question 5 -->
+              <div class="mb-3">
+                <label for="question5" class="form-label">Question 5: ኃይማኖት 
+                </label>
+                <input type="text" class="form-control" id="question" name="work" placeholder="enter religion" required />
+              </div>
+
+              <!-- Question 6 -->
+              <div class="mb-3">
+                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
+                </label>
+                <input type="text" class="form-control" id="question" name="religion" placeholder="enter ???"
+                  required />
+                <div id="religionError" class="error-message"></div>
+              </div>
+
+              <!-- Question 7 -->
+              <div class="mb-3">
+                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
+                </label>
+                <input type="text" class="form-control" id="question" name="enter where you planning n=in future"
+                  placeholder="enter ??" required />
+                <div id="currentLocationError" class="error-message"></div>
+              </div>
+
+              <!-- Question 8 -->
+              <!-- <div class="mb-3">
+                <label for="question8" class="form-label">Question 8: ስልክ
+                </label>
+                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                  required />
+                <div id="futurePlanError" class="error-message"></div>
+              </div> -->
+
+              <!-- Question 9 -->
+              <!-- <div class="mb-3">
+                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
+                </label>
+                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                  required />
+                <div id="futurePlanError" class="error-message"></div>
+              </div> -->
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary mt-3" style="width: 231px;">Submit</button>
+            </form>
+          </div>
+          * go to payment section
+          </div>
         </div>
       </div>
     </div>
-
- 
-
-    <div class="container mt-5">
-      <h2>Registration Form</h2>
-
+    <div class="col-lg-4">
+      <!-- Right column content -->
+      <div class="flex-item">
+         <h4>Registration Form</h4>
       <form>
         <!-- Email and Phone in the same row -->
         <div class="row mb-3">
@@ -350,21 +430,7 @@
           </div>
         </div>
 
-        <!-- Country and ZIP in the same row -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="inputCountry" class="form-label">Country</label>
-            <select class="form-select" id="inputCountry" aria-label="Select Country">
-              <option selected>Select</option>
-              <option value="us">United States</option>
-              <option value="ca">Canada</option>
-            </select>
-          </div>
-          <div class="col-md-6">
-            <label for="inputZip" class="form-label">Billing ZIP / Postal Code</label>
-            <input type="text" class="form-control" id="inputZip" placeholder="ZIP/Postal Code">
-          </div>
-        </div>
+    <!-- payment methods-->
         <div class="accordion-body">
           <fieldset class="mt-4 mb-4">
             <legend>Choose a Payment Method</legend>
@@ -379,16 +445,21 @@
               <input type="radio" name="set3" value="option2" />
               PayPal
             </label>
-
           </fieldset>
         </div>
-        <!-- Submit Button (you may want to customize this based on your needs) -->
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary" style="width: 231px;">Submit Form</button>
       </form>
+       የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝና የ3 ሰዎች አድራሻው ይደርሰዋል።
+        ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
+        ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት::
+      </div>
+        * Please fill out all the forms from the left.
     </div>
+  </div>
+</div>
 
-    <hr class="w-100">
 
+<!-- footer -->
     <footer class="container py-5">
       <div class="row">
         <div class="col-12 col-md">
