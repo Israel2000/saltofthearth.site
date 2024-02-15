@@ -28,9 +28,22 @@
       padding: 5px;
       background-color: #6200c3;
       color: white;
-      border-radius: 7px;
+      /* border-radius: 7px; */
       text-align: center;
     }
+    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      color: #6200c3;
+      background-color: white;
+      border: 2px solid #6200c3;
+    }
+    /* button#pills-profile-tab.nav-link {
+      color: #6200c3 !important;
+    } */
+
+    .form-check-input:checked {
+    background-color: #6200c3;
+    border-color: #6200c3;
+}
   </style>
 
   <body>
@@ -42,13 +55,17 @@
         /></a>
         <ul class="navbar-nav ms-auto">
           <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Membership</a>
+          <a class="nav-link" href="membersignin.html">Membership</a>
         </li> -->
           <li class="nav-item">
-            <button type="button" class="btn btn-primary">
-              Give
-              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i>
-            </button>
+            <a
+              type="button"
+              class="btn btn-primary"
+              class="nav-link"
+              href="donation.html"
+              >Give
+              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i
+            ></a>
           </li>
         </ul>
       </div>
@@ -102,14 +119,14 @@
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdown"
-                style="border: none"
+                style="border: 1px solid #6200c3"
               >
                 <a class="dropdown-item" href="counseling.html">ላላገቡ</a>
                 <a class="dropdown-item" href="counseling.html">ላገቡ</a>
               </div>
             </li>
             <li class="nav-item mb-2">
-              <a class="nav-link" href="sessions.html">አዲስ ጓደኛ እፈልጋለሁ</a>
+              <a class="nav-link" href="newFriendFinder.html">አዲስ ጓደኛ እፈልጋለሁ</a>
             </li>
           </ul>
         </div>
@@ -117,9 +134,590 @@
     </nav>
 
     <h3 class="text-center-counsleling">Form: Counseling page</h3>
-    <div class="container mt-5">
-      <div class="row"></div>
+
+        
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9"> <!-- 75% width for left column on md screens and above -->
+          <div class="custom-section">
+            <!-- Content for the left column -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <!-- <button class="nav-link active" href="#tab1" aria-controls="tab1" role="tab" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="tab1" aria-selected="true">ላላገቡ</button> -->
+                <a class="nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</a>
+
+              </li>
+              <li class="nav-item" role="presentation">
+                <!-- <button class="nav-link" href="#tab2" aria-controls="tab2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="tab2" aria-selected="false">ላገቡ</button> -->
+                <a class="nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
+
+              </li>
+              
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <!-- unmarried form -->
+                <div class="flex-item">
+                  <div
+                    class=""
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 10px;
+                      padding: 29px;
+                      border: 2px solid #eaeaea;
+                    "
+                  >
+                    <form class="custom-form">
+                      <p>
+                        <span style="font-weight: bold; color: #6200c3;"
+                          >ላላገቡ:- Select 1 of 12 questions.</span
+                        >
+                      </p>
+    
+                      <!-- Question 1 -->
+                      <div class="mt-2 mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label class="form-label" for="q1"
+                          >Question 1: <span>እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?</span>
+                        </label>
+                        <div id="genderError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 2 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q2"
+                          value="male"
+                          required
+                        />
+                        <label for="question2" class="form-label" for="q2"
+                          >Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ ?</label
+                        >
+                        <div id="codeError" class="error-message"></div>
+                      </div>
+                      <!-- Question 3 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q3"
+                          value="male"
+                          required
+                        />
+                        <label for="question3" class="form-label" for="q3"
+                          >Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ ?</label
+                        >
+                        <div id="ageError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 4 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q4"
+                          value="male"
+                          required
+                        />
+                        <label for="question4" class="form-label" for="q4"
+                          >Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን ምን ናቸው ?
+                        </label>
+    
+                        <div id="schoolError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 5 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q5"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question5" class="form-label" for="q5"
+                          >Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል ጊዜስ
+                          በእጮኝምነት እንቆይ ?/
+                        </label>
+                        <div id="workError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 6 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q6"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question6" class="form-label" for="q6"
+                          >Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን ናቸው ?
+                        </label>
+    
+                        <div id="religionError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 7 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q7"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question7" class="form-label" for="q7"
+                          >Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር ይኖርብናል ወይ ?
+                        </label>
+    
+                        <div
+                          id="currentLocationError"
+                          class="error-message"
+                        ></div>
+                      </div>
+    
+                      <!-- Question 8 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q8"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question8" class="form-label" for="q8"
+                          >Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት እችላለሁ ወይ ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 9 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q9"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question8" class="form-label" for="q9"
+                          >Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት ብንሞካከርስ
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 10 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q10"
+                          value="male"
+                          required
+                        />
+    
+                        <label for="question8" class="form-label" for="q10"
+                          >Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና የእርግዝና መከላከያ
+                          መጠቀም ኃጢያት ነው ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 11 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q10"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል ያስፈልጋል
+                          ወይ ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 12 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q10"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /
+                          ፎርም
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                     <p style="color: #6200c3">Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ</p> 
+                      <!-- Submit Button -->
+                      <div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <!-- married form -->
+                <div class="flex-item">
+                  <div
+                    class=""
+                    style="
+                      background-color: #f4f4f4;
+                      border-radius: 10px;
+                      padding: 29px;
+                      border: 2px solid #eaeaea;
+                    "
+                  >
+                    <form class="custom-form" onsubmit="return validateForm()">
+                      <!-- Question 1 -->
+                      <span style="font-weight: bold; color: #6200c3;"
+                        >ላገቡ:- Select 1 of 12 questions.</span
+                      >
+                      <div class="mt-2 mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label class="form-label"
+                          >Question 1: <span
+                            >በተጋባን በመጀመሪያው አመት ላይ የሚታዩ አዳድስ ባህሪያት እንዴት መቋቋም
+                            ይቻላል?</span
+                          >
+                        </label>
+    
+                        <div id="genderError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 2 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question2" class="form-label"
+                          >Question 2: በጋብቻ ውስጥ የእርግዝና መከላከያ መጠቀም ይቻላል ?</label
+                        >
+    
+                        <div id="codeError" class="error-message"></div>
+                      </div>
+                      <!-- Question 3 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question3" class="form-label"
+                          >Question 3: ልጆቻችንን በአንድ ላይ ተባብረን ማሳደግ አቃተን ምን እናድርግ
+                          ?</label
+                        >
+    
+                        <div id="ageError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 4 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question4" class="form-label"
+                          >Question 4: በገንዘብ ጉዳይ መስማማት አቃተን ምን እናድርግ?
+                        </label>
+    
+                        <div id="schoolError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 5 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question5" class="form-label"
+                          >Question 5: በግብረስጋ ግንኙነት መጣጣም አቃተን ምን እናድርግ?
+                        </label>
+    
+                        <div id="workError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 6 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question6" class="form-label"
+                          >Question 6: ተስማምተን በደስታ መኖር አቃተን ምን እናድርግ?
+                        </label>
+    
+                        <div id="religionError" class="error-message"></div>
+                      </div>
+    
+                      <!-- Question 7 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question7" class="form-label"
+                          >Question 7: የወላጆችን መጥፎ ጣልቃ ገብነት እንዴት ማስቆም ይቻላል?
+                        </label>
+    
+                        <div
+                          id="currentLocationError"
+                          class="error-message"
+                        ></div>
+                      </div>
+    
+                      <!-- Question 8 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 8: ስለ ፍቺ የምድራዊና የሰማያዊ ህጉ ምን ይላል ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 9 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 9: የባልና የሚስት የግልና የጋራ ኃላፊነቶች ምን ምን ናቸው ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 10 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 10: ስለ መካንነትና ማስወረድ ምክራችሁ ምንድን ነው ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 11 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 11: ስለ ፖርኖግራፊና ኤች አይ ቪ ኤይድስ ምን ምክር አላችሁ ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+                      <!-- Question 12 -->
+                      <div class="mb-3">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="gender"
+                          id="q1"
+                          value="male"
+                          required
+                        />
+                        <label for="question8" class="form-label"
+                          >Question 12: ሁለተኛ ስለ ማግባት ምን ምክር አላችሁ ?
+                        </label>
+    
+                        <div id="futurePlanError" class="error-message"></div>
+                      </div>
+    
+                      <p style="color: #6200c3">Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ</p> 
+                      <!-- Submit Button -->
+                      <div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                          Submit
+                        </button>
+                      </div>
+                      <div>
+                        <!-- <button type="submit" class="btn btn-primary btn-lg mt-4">
+                Submit
+              </button> -->
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"> <!-- 25% width for right column on md screens and above -->
+         
+          <div class="custom-section">
+            <!-- Content for the right column -->
+             <h5 class="text-center mb-4 mt-4" style="color: #6200c3;">
+            Choose session & payment Option
+          </h5>
+            <div class="flex-item">
+              <div class="" style="border: 1px solid #6200c3; padding: 29px">
+                <form>
+                  <fieldset>
+                    <legend>
+        
+                      <h6>ክፍያ / Select One from payment</h6>
+                    </legend>
+                    <label>
+                      <input type="radio" name="set1" value="option1" /> $50 -  ለአንድ
+                      ጊዜ ብቻ
+                    </label>
+                    <label style="">
+                      <input type="radio" name="set1" value="option2" /> $150 -
+                      ለሦስት ሳምንት
+                    </label>
+                    <label style="">
+                      <input type="radio" name="set1" value="option3" /> $300 -
+                      ለስድስት ሳምንት
+                    </label>
+                  </fieldset>
+  
+                  <fieldset class="mt-4">
+                    <legend class="h6">ጊዜ / Time & Day good for you</legend>
+                    <label>
+                      <input type="radio" name="set2" value="option1" /> ማክሰኞ
+                      (Tuesday) 8pm
+                    </label>
+                    <label style="">
+                      <input type="radio" name="set2" value="option2" /> ሐሙስ
+                      (Thursday) 2pm
+                    </label>
+                    <label style="">
+                      <input type="radio" name="set2" value="option3" /> ዓርብ
+                      (Friday) 8pm
+                    </label>
+                  </fieldset>
+  
+                  <div class="accordion-body">
+                    <fieldset class="mt-4 mb-4">
+                      <legend class="h6">Payment Method</legend>
+                      <div class="">Select payment Method</div>
+                      <label class="mr-3 mt-3 mb-2">
+                        <img src="assests/visa-light.png" width="50px" />
+                        <input
+                          class="mr-2"
+                          type="radio"
+                          name="set3"
+                          value="option1"
+                        />
+                        Credit Card
+                      </label>
+                      <label style="">
+                        <img src="assests/paypal-light.png" width="50px" />
+                        <input type="radio" name="set3" value="option2" />
+                        PayPal
+                      </label>
+                    </fieldset>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary mt-2 text-center"
+                    
+                  >
+                    Processed Checkout
+                  </button>
+  
+                  <!-- <input type="submit" value="Submit"> -->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
 
     <!-- 090843743 vvvvvvvvvvvvvvvvvv -->
     <div class="container">
@@ -128,557 +726,17 @@
           <div class="row">
             <div class="col-lg-6">
               <!-- Left inner flex container column 1 -->
-              <div class="flex-item">
-                <div
-                  class=""
-                  style="
-                    background-color: #f4f4f4;
-                    border-radius: 10px;
-                    padding: 29px;
-                    border: 2px solid #eaeaea;
-                  "
-                >
-                  <form class="custom-form" onsubmit="return validateForm()">
-                    <p>
-                      <span style="font-weight: bold"
-                        >ላላገቡ:- One selection out of 12 questions.</span
-                      >
-                    </p>
-
-                    <!-- Question 1 -->
-
-                    <div class="mt-2 mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label class="form-label" for="q1"
-                        >Question 1:<span>እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?</span>
-                      </label>
-                      <div id="genderError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 2 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q2"
-                        value="male"
-                        required
-                      />
-                      <label for="question2" class="form-label" for="q2"
-                        >Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ ?</label
-                      >
-                      <div id="codeError" class="error-message"></div>
-                    </div>
-                    <!-- Question 3 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q3"
-                        value="male"
-                        required
-                      />
-                      <label for="question3" class="form-label" for="q3"
-                        >Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ ?</label
-                      >
-                      <div id="ageError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 4 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q4"
-                        value="male"
-                        required
-                      />
-                      <label for="question4" class="form-label" for="q4"
-                        >Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን ምን ናቸው ?
-                      </label>
-
-                      <div id="schoolError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 5 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q5"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question5" class="form-label" for="q5"
-                        >Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል ጊዜስ
-                        በእጮኝምነት እንቆይ ?/
-                      </label>
-                      <div id="workError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 6 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q6"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question6" class="form-label" for="q6"
-                        >Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን ናቸው ?
-                      </label>
-
-                      <div id="religionError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 7 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q7"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question7" class="form-label" for="q7"
-                        >Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር ይኖርብናል ወይ ?
-                      </label>
-
-                      <div
-                        id="currentLocationError"
-                        class="error-message"
-                      ></div>
-                    </div>
-
-                    <!-- Question 8 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q8"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question8" class="form-label" for="q8"
-                        >Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት እችላለሁ ወይ ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 9 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q9"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question8" class="form-label" for="q9"
-                        >Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት ብንሞካከርስ
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 10 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q10"
-                        value="male"
-                        required
-                      />
-
-                      <label for="question8" class="form-label" for="q10"
-                        >Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና የእርግዝና መከላከያ
-                        መጠቀም ኃጢያት ነው ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 11 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q10"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል ያስፈልጋል
-                        ወይ ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 12 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q10"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /
-                        ፎርም
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
-                    <!-- Submit Button -->
-                    <div>
-                      <button type="submit" class="btn btn-primary btn-lg mt-4">
-                        Submit
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
+              
             </div>
             <div class="col-lg-6">
               <!-- Left inner flex container column 2 -->
-              <div class="flex-item">
-                <div
-                  class=""
-                  style="
-                    background-color: #f4f4f4;
-                    border-radius: 10px;
-                    padding: 29px;
-                    border: 2px solid #eaeaea;
-                  "
-                >
-                  <form class="custom-form" onsubmit="return validateForm()">
-                    <!-- Question 1 -->
-                    <span style="font-weight: bold"
-                      >ላገቡ:- Choose One selection out of 12 questions.</span
-                    >
-                    <div class="mt-2 mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label class="form-label"
-                        >Question 1:<span
-                          >በተጋባን በመጀመሪያው አመት ላይ የሚታዩ አዳድስ ባህሪያት እንዴት መቋቋም
-                          ይቻላል?</span
-                        >
-                      </label>
-
-                      <div id="genderError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 2 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question2" class="form-label"
-                        >Question 2: በጋብቻ ውስጥ የእርግዝና መከላከያ መጠቀም ይቻላል ?</label
-                      >
-
-                      <div id="codeError" class="error-message"></div>
-                    </div>
-                    <!-- Question 3 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question3" class="form-label"
-                        >Question 3: ልጆቻችንን በአንድ ላይ ተባብረን ማሳደግ አቃተን ምን እናድርግ
-                        ?</label
-                      >
-
-                      <div id="ageError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 4 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question4" class="form-label"
-                        >Question 4: በገንዘብ ጉዳይ መስማማት አቃተን ምን እናድርግ?
-                      </label>
-
-                      <div id="schoolError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 5 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question5" class="form-label"
-                        >Question 5: በግብረስጋ ግንኙነት መጣጣም አቃተን ምን እናድርግ?
-                      </label>
-
-                      <div id="workError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 6 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question6" class="form-label"
-                        >Question 6: ተስማምተን በደስታ መኖር አቃተን ምን እናድርግ?
-                      </label>
-
-                      <div id="religionError" class="error-message"></div>
-                    </div>
-
-                    <!-- Question 7 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question7" class="form-label"
-                        >Question 7: የወላጆችን መጥፎ ጣልቃ ገብነት እንዴት ማስቆም ይቻላል?
-                      </label>
-
-                      <div
-                        id="currentLocationError"
-                        class="error-message"
-                      ></div>
-                    </div>
-
-                    <!-- Question 8 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 8: ስለ ፍቺ የምድራዊና የሰማያዊ ህጉ ምን ይላል ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 9 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 9: የባልና የሚስት የግልና የጋራ ኃላፊነቶች ምን ምን ናቸው ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 10 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 10: ስለ መካንነትና ማስወረድ ምክራችሁ ምንድን ነው ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 11 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 11: ስለ ፖርኖግራፊና ኤች አይ ቪ ኤይድስ ምን ምክር አላችሁ ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-                    <!-- Question 12 -->
-                    <div class="mb-3">
-                      <input
-                        class="form-check-input"
-                        type="radio"
-                        name="gender"
-                        id="q1"
-                        value="male"
-                        required
-                      />
-                      <label for="question8" class="form-label"
-                        >Question 12: ሁለተኛ ስለ ማግባት ምን ምክር አላችሁ ?
-                      </label>
-
-                      <div id="futurePlanError" class="error-message"></div>
-                    </div>
-
-                    Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ ምርጫ ብቻ ያስቀምጡ
-                    <!-- Submit Button -->
-                    <div>
-                      <button type="submit" class="btn btn-primary btn-lg mt-4">
-                        Submit
-                      </button>
-                    </div>
-                    <div>
-                      <!-- <button type="submit" class="btn btn-primary btn-lg mt-4">
-              Submit
-            </button> -->
-                    </div>
-                  </form>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
         <div class="col-lg-4">
           <!-- Right column content -->
-          <div class="flex-item">
-            <div class="" style="border: 1px solid #dddddd; padding: 29px">
-              <form>
-                <fieldset>
-                  <legend>
-                    <h5 class="text-center mb-4 mt-4">
-                      Choose session & payment Option
-                    </h5>
-                    <h6>ክፍያ / Select One from payment</h6>
-                  </legend>
-                  <label>
-                    <input type="radio" name="set1" value="option1" />$50: ለአንድ
-                    ጊዜ ብቻ
-                  </label>
-                  <label style="margin-left: 20px">
-                    <input type="radio" name="set1" value="option2" /> $150:
-                    ለሦስት ሳምንት
-                  </label>
-                  <label style="margin-left: 20px">
-                    <input type="radio" name="set1" value="option3" /> $300:
-                    ለስድስት ሳምንት
-                  </label>
-                </fieldset>
-
-                <fieldset class="mt-4">
-                  <legend class="h5">ጊዜ / Time & Day good for you</legend>
-                  <label>
-                    <input type="radio" name="set2" value="option1" /> ማክሰኞ
-                    Tuesday/ 8pm/
-                  </label>
-                  <label style="margin-left: 20px">
-                    <input type="radio" name="set2" value="option2" /> ሐሙስ
-                    Thursday/2pm/
-                  </label>
-                  <label style="margin-left: 20px">
-                    <input type="radio" name="set2" value="option3" /> ዓርብ
-                    Friday/8pm/
-                  </label>
-                </fieldset>
-
-                <div class="accordion-body">
-                  <fieldset class="mt-4 mb-4">
-                    <legend class="h5">Payment Method</legend>
-                    <div class="font-bold">Select payment Method</div>
-                    <label class="mr-3 mt-3">
-                      <img src="assests/visa-light.png" width="50px" />
-                      <input
-                        class="mr-2"
-                        type="radio"
-                        name="set3"
-                        value="option1"
-                      />
-                      Credit Card
-                    </label>
-                    <label style="margin-left: 20px">
-                      <img src="assests/paypal-light.png" width="50px" />
-                      <input type="radio" name="set3" value="option2" />
-                      PayPal
-                    </label>
-                  </fieldset>
-                </div>
-                <button
-                  type="submit"
-                  class="btn btn-primary mt-2"
-                  style="width: 261px"
-                >
-                  Submit
-                </button>
-
-                <!-- <input type="submit" value="Submit"> -->
-              </form>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
