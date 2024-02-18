@@ -1,25 +1,13 @@
 console.log("HI")
+// document.addEventListener("DOMContentLoaded", function() {
+//   const urlParams = new URLSearchParams(window.location.search);
+//   const tabParam = urlParams.get('tab');
 
-// Function to parse URL parameters
-function getUrlParameter(name) {
-    name = name.replace(/[\[\]]/g, '\\$&');
-    var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-        results = regex.exec(window.location.href);
-    if (!results) return null;
-    if (!results[2]) return '';
-    return decodeURIComponent(results[2].replace(/\+/g, ' '));
-  }
-
-  // Function to open the specified tab
-  function openTab(tabId) {
-    var tab = new bootstrap.Tab(document.getElementById(tabId));
-    tab.show();
-  }
-
-  // Get the tab parameter from the URL
-  var tabParam = getUrlParameter('pill');
-
-  // Open the specified tab if the parameter is found
-  if (tabParam !== null) {
-    openTab(tabParam);
-  }
+//   if (tabParam === 'married') {
+//     document.getElementById('married-tab').classList.add('active');
+//     document.getElementById('married').classList.add('show', 'active');
+//   } else {
+//     document.getElementById('unmarried-tab').classList.add('active');
+//     document.getElementById('unmarried').classList.add('show', 'active');
+//   }
+// });
