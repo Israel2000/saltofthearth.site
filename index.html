@@ -30,6 +30,10 @@
     h5 {
       color: #6200c3;
     }
+    .carousel-item img {
+        max-width: 100%;
+        max-height: 100%;
+    }
   </style>
 
   <body>
@@ -120,7 +124,7 @@
     </nav>
 
     <!-- slide carousel -->
-    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
           type="button"
@@ -214,7 +218,64 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
+    </div> -->
+
+ <!-- slide carousel -->
+ <div class="container">
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#myCarousel"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+
+  <div class="carousel-inner mx-auto" style="max-width: 2000px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="assests/Family_comes_(2).jpg" alt="Family" width="2000px" height="900px" style="object-fit: contain;"/>
     </div>
+    
+    <div class="carousel-item mx-auto" style="max-width: 2000px;">
+      <img class="d-block w-100" src="assests/Family_comes(1).jpg" alt="Family" width="2000px" height="900px" style="object-fit: contain;">
+  </div>
+
+  <div class="carousel-item active">
+    <img class="d-block w-100" src="assests/Family_comes_(2).jpg" alt="Family" width="2000px" height="900px" style="object-fit: contain;"/>
+  </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next"
+    type="button"
+    data-bs-target="#myCarousel"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+ </div>
+ 
 
     <!-- 3 columns -->
     <div class="container mt-5">
@@ -296,7 +357,6 @@
     </figure> -->
 
       <!-- introduction to our founder -->
-
       <div class="row featurette mt-5">
         <div class="col-md-7 order-md-2">
           <h2 class="featurette-heading fw-normal lh-1">
@@ -413,7 +473,7 @@
     
 
     <!-- footer -->
-    <div id="cause" class="container-fluid cause-info"  style="background-image: url('assests/bg-image.png');"">
+    <div id="cause" class="container-fluid cause-info" >
       <div class="row">
            <!-- footer -->
       <footer class="container py-5">
