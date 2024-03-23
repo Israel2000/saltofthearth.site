@@ -6,7 +6,7 @@
 
 /* Since positioning the image, we need to help out the caption */
 body {
-  background-color: rgb(231, 231, 231) !important;
+  background-color: rgb(242, 242, 242) !important;
 }
 .carousel-caption {
   bottom: 3rem;
