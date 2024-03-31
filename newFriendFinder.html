@@ -121,7 +121,7 @@
       border: none !important;
     }
 
-    label:first-child {
+    label {
       color: #6200c3;
     }
 
@@ -163,6 +163,15 @@
 input[type="text"] {
   width: 100%; /* Ensure inputs take up full width of their container */
 }
+
+/* Custom CSS for label alignment */
+    .form-group.label-inline {
+      display: flex;
+      align-items: center;
+    }
+    .form-group.label-inline label {
+      margin-right: 10px;
+    }
   </style>
   
   <body>
@@ -465,11 +474,42 @@ input[type="text"] {
               <input class="mr-2" type="radio" name="set3" value="option1" />
               Credit Card
             </label>
+            
             <label style="margin-left: 20px">
               <img src="assests/paypal-light.png" width="50px" />
               <input type="radio" name="set3" value="option2" />
               PayPal
             </label>
+
+ <div class="container mt-3">
+    <div class="row justify-content-center">
+      <div class="">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Credit Card Information</h5>
+            <form>
+              <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+              </div>
+              <div class="form-group label-inline mt-2">
+                <label for="expirationDate">Expiration Date</label>
+                <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+                <label for="cvv" class="">CVV</label>
+                <input type="text" class="form-control" id="cvv" placeholder="CVV">
+              </div>
+              <div class="form-group mt-2">
+                <label for="cardholderName">Cardholder Name</label>
+                <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
+              </div>
+              <button type="submit" class="btn btn-primary mt-2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
           </fieldset>
         </div>
         <button type="submit" class="btn btn-primary" style="width: 231px;">Submit Form</button>
