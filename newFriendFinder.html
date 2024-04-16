@@ -9,10 +9,12 @@
     <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <script src="js/bootstrap.bundle.min.js"></script>
     <title>Salt of the Earth</title>
   </head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
   <style>
     h5 {
       color: #6200C3;
@@ -216,10 +218,6 @@ input[type="text"] {
             <li class="nav-item mb-2">
               <a class="nav-link mr-2" href="about.html">About Us</a>
             </li>
-
-            <!--           <li class="nav-item mb-2">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li> -->
             <li class="nav-item mb-2">
               <a class="nav-link" href="videos.html">Videos</a>
             </li>
@@ -240,8 +238,10 @@ input[type="text"] {
                 aria-labelledby="navbarDropdown"
                 style="border: 1px solid #6200c3"
               >
-                <a class="dropdown-item" href="counseling.html">ላላገቡ</a>
-                <a class="dropdown-item" href="counseling.html">ላገቡ</a>
+                <a class="dropdown-item" href="counseling_UnMarried.html"
+                  >ላላገቡ</a
+                >
+                <a class="dropdown-item" href="counseling_Married .html">ላገቡ</a>
               </div>
             </li>
             <li class="nav-item mb-2">
@@ -251,240 +251,404 @@ input[type="text"] {
         </div>
       </div>
     </nav>
+
   
+<!-- ================================== -->
+
     <h3 class="text-center-sessions">
       Form: አዲስ ጓደኛ እፈልጋለሁ
     </h3>
 
 <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+
+
+
+
+<!-- ======================================new form making======================================================== -->
+
 <div class="container">
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="row">
-        <div class="col-lg-6">
-          <!-- Left inner flex container column 1 -->
-          <div class="flex-item">
-            <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
-            <h5>አዲስ ጓደኛ እፈልጋለሁ</h5>
-            <form class="custom-form" >
-              <!-- Question 1 -->
-               <div class="mb-3">
-                <label for="question2" class="form-label">Question 1: የእርስዎ ስም</label>
-                <input type="text" class="form-control" id="question" placeholder="enter code here" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
 
-              <!-- Question 2 -->
-              <div class="mb-3">
-                <label for="question2" class="form-label">Question 2: የእርስዎ እድሜ</label>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter your age" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
+<div class="row">
+    <div class="col-lg-12">
+      <form  action="https://api.web3forms.com/submit" method="POST" name="form1">
+       <!-- action="https://api.web3forms.com/submit" method="POST">  -->
 
-              <!-- Question 3 -->
-              <div class="mb-3">
-                <label for="question3" class="form-label">Question 3: የእርስዎ የት/ት ደረጃ</label>
-                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
+        
+        
+        <div class="row">
+          
+          <input type="hidden" name="access_key" value="4a79ddf0-4a42-4987-a7eb-5d93d145890a">
+          <input type="hidden" name="redirect" value="https://partnerwebsite.com/someaction/">
 
-              <!-- Question 4 -->
-              <div class="mb-3">
-                <label for="question4" class="form-label">Question 4: የእርስዎ ሥራ
-                </label>
-                <input type="text" class="form-control" id="question" name="school" placeholder="enter your job title"
-                  required />
-              </div>
+    
 
-              <!-- Question 5 -->
-              <div class="mb-3">
-                <label for="question5" class="form-label">Question 5: የእርስዎ ኃይማኖት 
-                </label>
-                <input type="text" class="form-control" id="question" name="work" placeholder="enter your religion" required />
-              </div>
+<!-- form1 -->
 
-              <!-- Question 6 -->
-              <div class="mb-3">
-                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="religion" placeholder="enter where you live"
-                  required />
-                <div id="religionError" class="error-message"></div>
-              </div>
+<div class="col-lg-4">
 
-              <!-- Question 7 -->
-              <div class="mb-3">
-                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="currentLocation"
-                  placeholder="enter where you live in the future" required />
-                <div id="currentLocationError" class="error-message"></div>
-              </div>
+<div class="flex-item " id="1">
+    <div  style="background-color: #f4f4f4; border-radius: 10px; padding: 29px"   class="custom-form f1validate" >
+    <h5>አዲስ ጓደኛ እፈልጋለሁ</h5>
+    <!-- <form  class="custom-form f1validate" name="form1"   > -->
+      <!-- Question 1 -->
+       <div class="mb-3">
+        <label for="question2" class="form-label">Question 1: የእርስዎ ስም</label>
+        <input type="number" class="form-control" id="i1" placeholder="enter Your name here"   name="full_name">
+        <div id="codeError" class="error-message "></div>
 
-              <!-- Question 8 -->
-              <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ስልክ
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter your phone" required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div>
 
-              <!-- Question 9 -->
-              <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter @email"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div>
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary mt-2" style="width: 231px;">Next -></button>
-            </form>
-          </div>
-          </div>
-        </div>
-        <!-- ------------0000000000000 -->
-        <div class="col-lg-6">
-          <!-- Left inner flex container column 2 -->
-          <div class="flex-item">
-             <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
-               <h5>መተዋወቅ የምፈልገው ሰው</h5> 
-            <form class="custom-form" >
-              <!-- Question 1 -->
-               <div class="mb-3">
-                <label for="question2" class="form-label">Question 1: ፆታ</label>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter gender"
-                  required />
-                <div id="codeError" class="error-message"></div>
-              </div>
-
-              <!-- Question 2 -->
-              <div class="mb-3">
-                <label for="question2" class="form-label">Question 2: እድሜ</label>
-                <div class="input-container">
-                  <div class="input-item">
-                    <input type="text" class="form-control" placeholder="min age">
-                  </div>
-                  <div class="input-item">
-                    <input type="text" class="form-control" placeholder="max age">
-                  </div>
-                </div>
-              </div>
-
-              <!-- Question 3 -->
-              <div class="mb-3">
-                <label for="question3" class="form-label">Question 3: የት/ት ደረጃ</label>
-                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level"
-                  required />
-              </div>
-
-              <!-- Question 4 -->
-              <div class="mb-3">
-                <label for="question4" class="form-label">Question 4: ሥራ
-                </label>
-                <input type="text" class="form-control" id="question" name="school" placeholder="enter school"
-                  required />
-              </div>
-
-              <!-- Question 5 -->
-              <div class="mb-3">
-                <label for="question5" class="form-label">Question 5: ኃይማኖት 
-                </label>
-                <input type="text" class="form-control" id="question" name="work" placeholder="enter religion" required />
-              </div>
-
-              <!-- Question 6 -->
-              <div class="mb-3">
-                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="religion" placeholder="enter where couples live"
-                  required />
-                <div id="religionError" class="error-message"></div>
-              </div>
-
-              <!-- Question 7 -->
-              <!-- <div class="mb-3">
-                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="enter where you planning n=in future"
-                  placeholder="enter ??" required />
-                <div id="currentLocationError" class="error-message"></div>
-              </div> -->
-
-              <!-- Question 8 -->
-              <!-- <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: ስልክ
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div> -->
-
-              <!-- Question 9 -->
-              <!-- <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div> -->
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary mt-3" style="width: 231px;">Submit</button>
-            </form>
-          </div>
-          * go to payment section
-          </div>
+        <div class="col-lg-12">
         </div>
       </div>
-    </div>
-    <div class="col-lg-4" >
-      <!-- Right column content -->
-      <div class="flex-item" style="border-color: #6200C3; border-radius: 10px; background-color: #f3e6ff;">
-         <h4>Complete Form</h4>
-      <form>
-        <!-- Email and Phone in the same row -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="inputEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPhone" class="form-label">Phone number</label>
-            <input type="tel" class="form-control" id="inputPhone" placeholder="555-555-5555">
-          </div>
+
+      <!-- Question 2 -->
+      <div class="mb-3">
+        <label for="question2" class="form-label">Question 2: የእርስዎ እድሜ</label>
+        <input type="number" class="form-control" id="i2" name="My_Age" placeholder="enter your age"   />
+        <div id="ageError" class="error-message"></div>
+
+      </div>
+
+      <!-- Question 3 -->
+      <div class="mb-3">
+        <label for="question3" class="form-label">Question 3: የእርስዎ የት/ት ደረጃ</label>
+        <input type="text" class="form-control" id="i3" name="School_Level" placeholder="enter school level"  />
+        <div id="levelError" class="error-message "></div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="mb-3">
+        <label for="question4" class="form-label">Question 4: የእርስዎ ሥራ
+        </label>
+        <input type="text" class="form-control" id="i4" name="Job_Tittle" placeholder="enter your job title"
+           />
+          <div id="jobError" class="error-message"></div>
+
+      </div>
+
+      <!-- Question 5 -->
+      <div class="mb-3">
+        <label for="question5" class="form-label">Question 5: የእርስዎ ኃይማኖት 
+        </label>
+        <input type="text" class="form-control" id="i5" name="My_Religion" placeholder="enter your religion"  />
+        <div id="religionError" class="error-message"></div>
+
+      </div>
+
+
+      <!-- Question 6 -->
+      <div class="mb-3">
+        <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
+        </label>
+        <input type="text" class="form-control" id="i6" name="Live_In" placeholder="enter where you live"
+           />
+          <div id="liveError" class="error-message "></div>
         </div>
 
-    <!-- payment methods-->
-        <div class="accordion-body">
-          <fieldset class="mt-4 mb-4">
-            <legend class="h5">Choose a Payment Method</legend>
-            <div class="font-bold">Select payment Method</div>
-             <p class="h4">$20</p>
-            <label class="mr-3 mt-3">
-              <img src="assests/visa-light.png" width="50px" />
-              <input class="mr-2" type="radio" name="set3" value="option1" />
-              Credit Card
-            </label>
-            <label style="margin-left: 20px">
-              <img src="assests/paypal-light.png" width="50px" />
-              <input type="radio" name="set3" value="option2" />
-              PayPal
-            </label>
-          </fieldset>
+      <!-- Question 7 -->
+      <div class="mb-3">
+        <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
+        </label>
+        <input type="text" class="form-control" id="i7" name="Live_In_Future"
+          placeholder="enter where you live in the future"  />
+          <div id="futureError" class="error-message "></div>
         </div>
-        <button type="submit" class="btn btn-primary" style="width: 231px;">Submit Form</button>
-      </form>
-       <p class="h6">
-        <!-- one client and  servuce copy email sent!!!!-->
-        <!-- የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝ ይደርሰዋል። -->
-        <!-- ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
-        ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት:: -->
-       </p> 
+
+      <!-- Question 8 -->
+      <div class="mb-3">
+        <label for="question8" class="form-label">Question 8: የእርስዎ ስልክ
+        </label>
+        <input type="number" class="form-control" id="i8" name="My_Phone" placeholder="enter your phone"  />
+        <div id="phoneError" class="error-message invalid-feedback"></div>
       </div>
-        * Please fill out all the forms from the left.
-    </div>
+
+      <!-- Question 9 -->
+      <div class="mb-3">
+        <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
+        </label>
+        <input type="email" class="form-control" id="i9" name="My_Email" placeholder="enter @email"
+           />
+          <div id="emailError" class="error-message"></div>
+
+          <input type="file" value="20" name="screenshot">
+          
+        </div>
+      <!-- Submit Button -->
+      <!-- <button type="button"  class="btn btn-primary mt-2" style="width: 231px;" onclick="f1validate()">Next -></button> -->
+      <!-- <input type="button" class="btn btn-primary mt-2" style="width: 231px;" value="Next ->" onclick="f1validate()"> -->
+    <div class="btn btn-primary mt-2" style="width: 231px;" onclick="f1validate()">next</div>
+    
+    <!-- </form> -->
+
+
   </div>
+  </div>
+
 </div>
+
+<!--  -->
+
+
+
+
+<!-- form2 -->
+
+    <div class="col-lg-4">
+
+
+        <div class="flex-item" id="2">
+            <div class="custom-form f2validate" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px"   >
+              <h5>መተዋወቅ የምፈልገው ሰው</h5> 
+           <!-- <form class="custom-form f2validate" name="form2"   > -->
+             <!-- Question 1 -->
+              <div class="mb-3">
+               <label for="question2" class="form-label">Question 1: ፆታ</label>
+               <input type="text" class="form-control" id="i10" name="gender" placeholder="enter gender"
+                  />
+               <div id="genderError" class="error-message"></div>
+             </div>
+
+             <!-- Question 2 -->
+             <div class="mb-3">
+               <label for="question2" class="form-label">Question 2: እድሜ</label>
+               <div class="input-container">
+                 <div class="input-item">
+                   <input type="number" class="form-control" placeholder="min age" name="minage" id="i11">
+                   <div id="minageError" class="error-message"></div>
+
+                 </div>
+                 <div class="input-item">
+                   <input type="number" class="form-control" placeholder="max age" name="maxage" id="i12">
+                   <div id="maxageError" class="error-message"></div>
+
+                 </div>
+               </div>
+             </div>
+
+             <!-- Question 3 -->
+             <div class="mb-3">
+               <label for="question3" class="form-label">Question 3: የት/ት ደረጃ</label>
+               <input type="text" class="form-control" id="i13" name="school" placeholder="enter school level" 
+                  />
+                 <div id="schoolError" class="error-message"></div>
+
+             </div>
+
+             <!-- Question 4 -->
+             <div class="mb-3">
+               <label for="question4" class="form-label">Question 4: ሥራ
+               </label>
+               <input type="text" class="form-control" id="i14" name="schooln" placeholder="enter school"
+                  />
+             </div>
+             <div id="schoolnError" class="error-message"></div>
+
+
+             <!-- Question 5 -->
+             <div class="mb-3">
+               <label for="question5" class="form-label">Question 5: ኃይማኖት 
+               </label>
+               <input type="text" class="form-control" id="i15" name="religion2" placeholder="enter religion"  />
+             </div>
+             <div id="religion2Error" class="error-message"></div>
+
+
+             <!-- Question 6 -->
+             <div class="mb-3">
+               <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
+               </label>
+               <input type="text" class="form-control" id="i16" name="couples" placeholder="enter where couples live"
+                  />
+               <div id="coupleError" class="error-message"></div>
+             </div>
+
+             <!-- Question 7 -->
+             <!-- <div class="mb-3">
+               <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
+               </label>
+               <input type="text" class="form-control" id="question" name="enter where you planning n=in future"
+                 placeholder="enter ??" required />
+               <div id="currentLocationError" class="error-message"></div>
+             </div> -->
+
+             <!-- Question 8 -->
+             <!-- <div class="mb-3">
+               <label for="question8" class="form-label">Question 8: ስልክ
+               </label>
+               <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                 required />
+               <div id="futurePlanError" class="error-message"></div>
+             </div> -->
+
+             <!-- Question 9 -->
+             <!-- <div class="mb-3">
+               <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
+               </label>
+               <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                 required />
+               <div id="futurePlanError" class="error-message"></div>
+             </div> -->
+             <!-- Submit Button -->
+             <!-- <input type="button" class="btn btn-primary mt-3" style="width: 231px;" value="Submit" onclick="f2validate"> -->
+             <!-- <button type="submit" class="btn btn-primary mt-3" style="width: 231px;"  onclick="f2validate()">SUBMIT</button> -->
+           
+             <div class="btn btn-primary mt-2" style="width: 231px;" onclick="f2validate()">next</div>
+
+
+            <!-- </form> -->
+
+
+         </div>
+         <!-- * go to payment section -->
+         </div>
+
+
+
+    </div>
+
+<!--  -->
+
+
+
+
+
+<!-- form3 -->
+
+<div class="col-lg-4">
+
+
+    <div class="flex-item" style="border-color: #6200C3; border-radius: 10px; background-color: #f3e6ff;"  name="form3" id="3">
+        <h4>Complete Form</h4>
+     <!-- <form   name="form3" id="3" novalidate> -->
+       <!-- Email and Phone in the same row -->
+       <div class="row mb-3">
+         <div class="col-md-6">
+           <label for="inputEmail" class="form-label">Email address</label>
+           <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com">
+         </div>
+         <div class="col-md-6">
+           <label for="inputPhone" class="form-label">Phone number</label>
+           <input type="tel" class="form-control" id="inputPhone" placeholder="555-555-5555">
+         </div>
+       </div>
+
+   <!-- payment methods-->
+       <div class="accordion-body">
+         <fieldset class="mt-4 mb-4">
+           <legend class="h5">Choose a Payment Method</legend>
+           <div class="font-bold">Select payment Method</div>
+            <p class="h4">$20</p>
+           <label class="mr-3 mt-3">
+             <img src="assests/visa-light.png" width="50px" />
+             <input class="mr-2" type="radio" name="set3" value="option1" />
+             Credit Card
+           </label>
+           <label style="margin-left: 20px">
+             <img src="assests/paypal-light.png" width="50px" />
+             <input type="radio" name="set3" value="option2" />
+             PayPal
+           </label>
+         </fieldset>
+       </div>
+       <!-- <button type="button" class="btn btn-primary" style="width: 231px;">Submit Form</button> -->
+       <button type="button" class="btn btn-primary mt-3" style="width: 231px;" data-bs-target="#my-mod" data-bs-toggle="modal">Proceed Payment</button>
+
+     
+       <!-- <button type="submit" class="btn btn-primary mt-3" style="width: 231px;"  onclick="f3validate()" id="sub" >Submit Form</button> -->
+     
+     
+
+
+
+       <!-- </form> -->
+
+
+      <p class="h6">
+       <!-- one client and  servuce copy email sent!!!!-->
+       <!-- የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝ ይደርሰዋል። -->
+       <!-- ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
+       ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት:: -->
+      </p> 
+     </div>
+
+
+
+</div>
+
+
+<!--  -->
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</form>
+
+
+<!-- modalbox -->
+
+<div class="modal modal-sm" id="my-mod">
+
+  <div class="modal-dialog modal-lg">
+<div class=" modal-content">
+
+  <div class="modal-header">
+  <img src="assests/logo.png" alt="" class="img-fluid w-50">
+    <button class="btn-close" data-bs-dismiss="modal"></button>
+  </div>
+
+<div class="modal-body  text-center">
+
+  <img src="assests/check.svg" alt="" class="img-fluid w-25">
+  <h3>Thank You</h3>
+  <h4>Your form has been submitted sucessfully</h4>
+  <h5>Now Please Proceed To The Payment </h5>
+
+</div>
+
+<div class="modal-footer">
+       <button type="submit" class="btn btn-primary mt-3" style="width: 231px;"  onclick="f3validate()" id="sub" >Submit Form</button>
+      </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+<!--  -->
+
+
+    </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ======================================================================================================= -->
 
 
  <!-- footer -->
@@ -577,9 +741,643 @@ input[type="text"] {
         </footer>
       </div>
     </div>
+
+
+
+
+
+
   </body>
   <!-- bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  
+
+ 
+ 
+ 
+ <script>
+
+
+
+
+
+
+
+
+
+
+document.getElementById("2").style.opacity='0.5'
+
+
+
+
+document.getElementById("3").style.opacity='0.5'
+
+
+
+
+var user=[]
+
+function f1validate(){
+    
+    
+    // this.user=[]
+
+var a=form1.full_name.value;
+var b=form1.My_Age.value;
+var c=form1.School_Level.value;
+var d=form1.Job_Tittle.value;
+var e=form1.My_Religion.value;
+var f=form1.Live_In.value;
+var g=form1.Live_In_Future.value;
+var h=form1.My_Phone.value;
+var i=form1.My_Email.value;
+
+console.log(a)
+
+
+
+console.log(a+b+c+d+e+f+g+i+"======")
+
+
+
+var F1Obj={name:a,age:b,schoollevel:c,jobtittle:d,religion:e,live:f,livefuture:g,phone:h,email:i};
+
+this.user.push(F1Obj)
+
+console.log(user)
+
+
+console.log(user+"=========")
+
+if(F1Obj.name.length == 0){ 
+
+document.getElementById("codeError").innerHTML="please enter code"
+document.getElementById("codeError").style.color="red"
+
+document.getElementById("i1").style.border="1px solid red"
+
+
+
+}
+
+
+
+
+
+
+else{
+  document.getElementById("codeError").innerHTML=""
+  document.getElementById("codeError").style.color=""
+
+document.getElementById("i1").style.border="1px solid green"
+
+
+
+
+}
+
+
+
+
+// age
+
+
+if(F1Obj.age == 0){
+  document.getElementById("ageError").innerHTML="please enter age"
+  document.getElementById("ageError").style.color="red"
+
+document.getElementById("i2").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("ageError").innerHTML=""
+  document.getElementById("ageError").style.color=""
+
+document.getElementById("i2").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// school level
+
+
+if(F1Obj.schoollevel == 0){
+  document.getElementById("levelError").innerHTML="please enter level"
+  document.getElementById("levelError").style.color="red"
+
+document.getElementById("i3").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("levelError").innerHTML=""
+  document.getElementById("levelError").style.color=""
+
+document.getElementById("i3").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// Job tittle
+
+
+if(F1Obj.jobtittle == 0){
+  document.getElementById("jobError").innerHTML="please enter job tittle"
+  document.getElementById("jobError").style.color="red"
+
+document.getElementById("i4").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("jobError").innerHTML=""
+  document.getElementById("jobError").style.color=""
+
+document.getElementById("i4").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+// religion
+
+
+if(F1Obj.religion == 0){
+  document.getElementById("religionError").innerHTML="please enter job tittle"
+  document.getElementById("religionError").style.color="red"
+
+document.getElementById("i5").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("religionError").innerHTML=""
+  document.getElementById("religionError").style.color=""
+
+document.getElementById("i5").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+// live
+
+
+if(F1Obj.live == 0){
+  document.getElementById("liveError").innerHTML="please fill this field"
+  document.getElementById("liveError").style.color="red"
+
+document.getElementById("i6").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("liveError").innerHTML=""
+  document.getElementById("liveError").style.color=""
+
+document.getElementById("i6").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// future live
+
+
+if(F1Obj.livefuture == 0){
+  document.getElementById("futureError").innerHTML="Please fill this field"
+  document.getElementById("futureError").style.color="red"
+
+document.getElementById("i7").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("futureError").innerHTML=""
+  document.getElementById("futureError").style.color=""
+
+document.getElementById("i7").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+// phone
+
+
+if(F1Obj.phone == 0){
+  document.getElementById("phoneError").innerHTML="please enter your phone"
+  document.getElementById("phoneError").style.color="red"
+
+document.getElementById("i8").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("phoneError").innerHTML=""
+  document.getElementById("phoneError").style.color=""
+
+document.getElementById("i8").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// email
+
+
+var patt=/\w+@[a-z]+\.[a-zA-z]{2,3}/
+if(F1Obj.email == 0){
+  document.getElementById("emailError").innerHTML="please enter Email"
+  document.getElementById("emailError").style.color="red"
+
+document.getElementById("i9").style.border="1px solid red"
+
+}
+
+
+else if(patt.test(F1Obj.email) == false){
+
+  document.getElementById("emailError").innerHTML="Please Enter Valid Email"
+  document.getElementById("emailError").style.color="red"
+
+document.getElementById("i9").style.border="1px solid red"
+
+
+}
+
+
+else{
+
+  document.getElementById("emailError").innerHTML=""
+  document.getElementById("emailError").style.color=""
+
+document.getElementById("i9").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+
+if(F1Obj.name.length > 0 && F1Obj.age.length > 0 && F1Obj.schoollevel.length > 0 && F1Obj.jobtittle.length > 0 && F1Obj.religion.length > 0 && F1Obj.live.length > 0 && F1Obj.livefuture.length > 0 && F1Obj.phone.length > 0 && F1Obj.email.length > 0){
+
+
+  document.getElementById("1").style.opacity='0.5'
+  document.getElementById("1").style.border=""
+
+
+  document.getElementById("2").style.opacity=''
+
+localStorage.form1=JSON.stringify(user)
+
+
+
+}
+
+else{
+
+  document.getElementById("1").style.border="1px solid red"
+
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+// form 2
+
+
+
+function f2validate(){
+
+    var user2=[]
+
+
+var j=form1.gender.value
+var k=form1.minage.value
+var l=form1.school.value
+var m=form1.maxage.value
+var n=form1.schooln.value
+var o=form1.religion2.value
+var p=form1.couples.value
+
+console.log(j)
+
+
+var F2Obj={gender:j,minage:k,maxage:m,school:l,schoolname:n,religion2:o,couple:p};
+
+user2.push(F2Obj);
+
+
+
+console.log(user2+"=========")
+
+
+// gender
+
+
+if(F2Obj.gender.length == 0){
+
+  document.getElementById("genderError").innerHTML="please enter gender"
+  document.getElementById("genderError").style.color="red"
+
+document.getElementById("i10").style.border="1px solid red"
+
+
+
+}
+
+
+
+else{
+  document.getElementById("genderError").innerHTML=""
+  document.getElementById("genderError").style.color=""
+
+document.getElementById("i10").style.border="1px solid green"
+
+
+
+
+}
+
+// 
+
+
+// min age
+
+
+if(F2Obj.minage.length == 0){
+  document.getElementById("minageError").innerHTML="please enter min age"
+  document.getElementById("minageError").style.color="red"
+
+document.getElementById("i11").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("minageError").innerHTML=""
+  document.getElementById("minageError").style.color=""
+
+document.getElementById("i11").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// max age
+
+
+if(F2Obj.maxage.length == 0){
+  document.getElementById("maxageError").innerHTML="please enter max age"
+  document.getElementById("maxageError").style.color="red"
+
+document.getElementById("i12").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("maxageError").innerHTML=""
+  document.getElementById("maxageError").style.color=""
+
+document.getElementById("i12").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// school level
+
+
+if(F2Obj.school.length == 0){
+  document.getElementById("schoolError").innerHTML="please enter school level"
+  document.getElementById("schoolError").style.color="red"
+
+document.getElementById("i13").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("schoolError").innerHTML=""
+  document.getElementById("schoolError").style.color=""
+
+document.getElementById("i13").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+// school name
+
+
+if(F2Obj.schoolname.length == 0){
+//   document.getElementById("schoolnError").innerHTML="please enter school name"
+//   document.getElementById("schoolnError").style.color="red"
+
+// document.getElementById("i14").style.border="10px solid red"
+
+
+document.getElementById("schoolnError").innerHTML="please enter the school"
+document.getElementById("schoolnError").style.color="red"
+document.getElementById("i14").style.border="1px solid red"
+
+}
+
+else{
+
+  // document.getElementById("schoolnError").innerHTML=""
+  // document.getElementById("schoolnnError").style.color="green"
+  // document.getElementById("i14").style.border="10px solid green"
+
+  document.getElementById("schoolnError").innerHTML=""
+  document.getElementById("i14").style.border="1px solid green"
+
+
+
+}
+// 
+
+
+
+
+
+// religion2
+
+
+if(F2Obj.religion2.length == 0){
+  document.getElementById("religion2Error").innerHTML="please fill this field"
+  document.getElementById("religion2Error").style.color="red"
+
+document.getElementById("i15").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("religion2Error").innerHTML=""
+  document.getElementById("religion2Error").style.color=""
+
+document.getElementById("i15").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+// couple 
+
+
+if(F2Obj.couple.length == 0){
+  document.getElementById("coupleError").innerHTML="Please fill this field"
+  document.getElementById("coupleError").style.color="red"
+
+document.getElementById("i16").style.border="1px solid red"
+
+
+}
+else{
+
+  document.getElementById("coupleError").innerHTML=""
+  document.getElementById("coupleError").style.color=""
+
+document.getElementById("i16").style.border="1px solid green"
+
+  
+}
+// 
+
+
+
+
+
+
+if(F2Obj.gender.length > 0 && F2Obj.minage.length > 0 && F2Obj.minage.length > 0 && F2Obj.school.length > 0 && F2Obj.schoolname.length > 0 && F2Obj.religion2.length > 0 && F2Obj.couple.length > 0){
+
+
+  document.getElementById("2").style.opacity='0.5'
+  document.getElementById("2").style.border=""
+
+  document.getElementById("3").style.opacity='1'
+
+  // document.getElementById("3").style.opacity=''
+
+
+
+
+localStorage.form2=JSON.stringify(user2)
+
+
+
+}
+
+else{
+
+  document.getElementById("2").style.border="1px solid red"
+
+  localStorage.form2=JSON.stringify("null")
+
+
+}
+
+
+
+
+
+}
+
+
+
+
+// 
+
+
+
+
+
+
+
+
+// 
+
+  </script>
+
+
+
+
 
   </html>
