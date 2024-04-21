@@ -38,6 +38,33 @@ body {
   margin-left: 0.75rem;
 }
 
+#testimonials {
+  padding: 80px 0;
+}
+
+.testimonial {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.testimonial:hover {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.author {
+  font-style: italic;
+  margin-top: 10px;
+  text-align: right;
+}
+
 /* rtl:end:ignore */
 
 /* Featurettes
