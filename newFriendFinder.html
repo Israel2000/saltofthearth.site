@@ -4,24 +4,21 @@
 
   <head>
     <meta charset="UTF-8" />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="assests/bulletoficonafrica.png"
-    />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Salt of the Earth</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Salt of the Earth New</title>
   </head>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     h5 {
       color: #6200C3;
     }
+
     .right-flex-section {
       flex: 1;
       padding: 20px;
@@ -107,7 +104,7 @@
     .btn-primary {
       background-color: #6200C3 !important;
       border: none !important;
-      /* padding: 10px; */
+      padding: 10px;
     }
 
     #question {
@@ -126,80 +123,70 @@
       border: none !important;
     }
 
-    label {
+    label:first-child {
       color: #6200c3;
     }
 
     .outer-flex-container {
-  display: flex;
-  width: 90%;
-}
-
-.flex-column {
-  flex: 1;
-}
-
-.inner-flex-container {
-  display: flex;
-}
-
-.inner-flex-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-item {
-  padding: 10px;
-  margin: 5px;
-  border: 1px solid #ddd;
-}
-
-/* input css gender */
-.input-container {
-  display: flex;
-}
-
-.input-item {
-  flex: 1;
-  margin-right: 10px; /* Adjust spacing between items */
-}
-
-input[type="text"] {
-  width: 100%; /* Ensure inputs take up full width of their container */
-}
-
-/* Custom CSS for label alignment */
-    .form-group.label-inline {
       display: flex;
-      align-items: center;
+      width: 90%;
     }
-    .form-group.label-inline label {
+
+    .flex-column {
+      flex: 1;
+    }
+
+    .inner-flex-container {
+      display: flex;
+    }
+
+    .inner-flex-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .flex-item {
+      padding: 10px;
+      margin: 5px;
+      border: 1px solid #ddd;
+    }
+
+    /* input css gender */
+    .input-container {
+      display: flex;
+    }
+
+    .input-item {
+      flex: 1;
       margin-right: 10px;
+      /* Adjust spacing between items */
+    }
+
+    input[type="text"] {
+      width: 100%;
+      /* Ensure inputs take up full width of their container */
+    }
+
+    .disable-form {
+      opacity: 0.5;
+      pointer-events: none;
     }
   </style>
-  
-  <body>
-     <!-- First Navbar with Logo on Left and Two Items on Far Right -->
-     <nav class="navbar navbar-light navbar-first bg-light">
+
+  <body >
+    <!-- First Navbar with Logo on Left and Two Items on Far Right -->
+    <nav class="navbar navbar-light navbar-first bg-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="assests/logo.svg" width="300px"
-        /></a>
+        <a class="navbar-brand" href="index.html"><img src="assests/logo.svg" width="300px" /></a>
         <ul class="navbar-nav ms-auto">
           <!-- <li class="nav-item">
           <a class="nav-link" href="membersignin.html">Membership</a>
         </li> -->
-        <li class="nav-item">
-          <a
-            type="button"
-            class="btn btn-primary"
-            class="nav-link"
-            href="donation.html"
-            >Give
-            <i class="fa fa-heart text-warning" style="margin-left: 10px"></i
-          ></a>
-        </li>
+          <li class="nav-item">
+            <a type="button" class="btn btn-primary" class="nav-link" href="donation.html">Give
+              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i></a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -207,22 +194,12 @@ input[type="text"] {
     <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
       <div class="container">
         <!-- Hamburger icon for small screens -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item mb-2">
               <a class="nav-link" href="index.html">Home</a>
@@ -230,36 +207,20 @@ input[type="text"] {
             <li class="nav-item mb-2">
               <a class="nav-link mr-2" href="about.html">About Us</a>
             </li>
-
-            <!--           <li class="nav-item mb-2">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li> -->
             <li class="nav-item mb-2">
               <a class="nav-link" href="videos.html">Videos</a>
             </li>
             <li class="nav-item dropdown mb-2">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 Counseling
               </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                style="border: 1px solid #6200c3"
-              >
-                <a class="dropdown-item" href="counseling.html?tab=tab1"
-                  >ላላገቡ</a
-                >
-                <a class="dropdown-item" href="counseling.html?tab=tab2">ላገቡ</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border: 1px solid #6200c3">
+                <a class="dropdown-item" href="counseling_UnMarried.html">ላላገቡ</a>
+                <a class="dropdown-item" href="counseling_Married .html">ላገቡ</a>
               </div>
             </li>
+            
             <li class="nav-item mb-2">
               <a class="nav-link" href="newFriendFinder.html">አዲስ ጓደኛ እፈልጋለሁ</a>
             </li>
@@ -267,279 +228,447 @@ input[type="text"] {
         </div>
       </div>
     </nav>
-  
+
+
+    <!-- ================================== -->
+
     <h3 class="text-center-sessions">
       Form: አዲስ ጓደኛ እፈልጋለሁ
     </h3>
 
-<!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8">
+    <p id="errorMsg" class="text-bg-danger text-center d-none">Please fill out all fields in the form</p>
+    <!-- ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,, -->
+
+
+
+
+    <!-- ======================================new form making======================================================== -->
+
+    <div class="container">
+
       <div class="row">
-        <div class="col-lg-6">
-          <!-- Left inner flex container column 1 -->
-          <div class="flex-item">
-            <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
-            <h5>አዲስ ጓደኛ እፈልጋለሁ</h5>
-            <form class="custom-form" >
-              <!-- Question 1 -->
-               <div class="mb-3">
-                <label for="question2" class="form-label">Question 1: የእርስዎ ስም</label>
-                <input type="text" class="form-control" id="question" placeholder="enter code here" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
+        <div class="col-lg-12">
 
-              <!-- Question 2 -->
-              <div class="mb-3">
-                <label for="question2" class="form-label">Question 2: የእርስዎ እድሜ</label>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter your age" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
+          <div class="row">
 
-              <!-- Question 3 -->
-              <div class="mb-3">
-                <label for="question3" class="form-label">Question 3: የእርስዎ የት/ት ደረጃ</label>
-                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level" required />
-                <div id="codeError" class="error-message"></div>
-              </div>
+            <input type="hidden" name="access_key" value="4a79ddf0-4a42-4987-a7eb-5d93d145890a">
+            <input type="hidden" name="redirect" value="https://partnerwebsite.com/someaction/">
 
-              <!-- Question 4 -->
-              <div class="mb-3">
-                <label for="question4" class="form-label">Question 4: የእርስዎ ሥራ
-                </label>
-                <input type="text" class="form-control" id="question" name="school" placeholder="enter your job title"
-                  required />
-              </div>
 
-              <!-- Question 5 -->
-              <div class="mb-3">
-                <label for="question5" class="form-label">Question 5: የእርስዎ ኃይማኖት 
-                </label>
-                <input type="text" class="form-control" id="question" name="work" placeholder="enter your religion" required />
-              </div>
 
-              <!-- Question 6 -->
-              <div class="mb-3">
-                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="religion" placeholder="enter where you live"
-                  required />
-                <div id="religionError" class="error-message"></div>
-              </div>
+            <!-- form1 -->
 
-              <!-- Question 7 -->
-              <div class="mb-3">
-                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="currentLocation"
-                  placeholder="enter where you live in the future" required />
-                <div id="currentLocationError" class="error-message"></div>
-              </div>
+            <div class="col-lg-4">
 
-              <!-- Question 8 -->
-              <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ስልክ
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter your phone" required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div>
+              <div class="flex-item form-1" id="form1">
+                <div style="background-color: #f4f4f4; border-radius: 10px; padding: 29px"
+                  class="custom-form f1validate">
+                  <h5>አዲስ ጓደኛ እፈልጋለሁ</h5>
+                  <!-- <form  class="custom-form f1validate" name="form1"   > -->
+                  <!-- Question 1 -->
+                  <div class="mb-3">
+                    <label for="question2" class="form-label">Question 1: የእርስዎ ስም</label>
+                    <input type="text" class="form-control" id="i1" placeholder="enter Your name here" required
+                      name="full_name">
+                    <div id="codeError" class="error-message "></div>
 
-              <!-- Question 9 -->
-              <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter @email"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div>
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary mt-2" style="width: 231px;">Next -></button>
-            </form>
-          </div>
-          </div>
-        </div>
-        <!-- ------------0000000000000 -->
-        <div class="col-lg-6">
-          <!-- Left inner flex container column 2 -->
-          <div class="flex-item">
-             <div class="" style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
-               <h5>መተዋወቅ የምፈልገው ሰው</h5> 
-            <form class="custom-form" >
-              <!-- Question 1 -->
-               <div class="mb-3">
-                <label for="question2" class="form-label">Question 1: ፆታ</label>
-                <input type="text" class="form-control" id="question" name="code" placeholder="enter gender"
-                  required />
-                <div id="codeError" class="error-message"></div>
-              </div>
 
-              <!-- Question 2 -->
-              <div class="mb-3">
-                <label for="question2" class="form-label">Question 2: እድሜ</label>
-                <div class="input-container">
-                  <div class="input-item">
-                    <input type="text" class="form-control" placeholder="min age">
+                    <div class="col-lg-12">
+                    </div>
                   </div>
-                  <div class="input-item">
-                    <input type="text" class="form-control" placeholder="max age">
+
+                  <!-- Question 2 -->
+                  <div class="mb-3">
+                    <label for="question2" class="form-label">Question 2: የእርስዎ እድሜ</label>
+                    <input type="number" class="form-control" id="i2" name="My_Age" placeholder="enter your age" />
+                    <div id="ageError" class="error-message"></div>
+
                   </div>
+
+                  <!-- Question 3 -->
+                  <div class="mb-3">
+                    <label for="question3" class="form-label">Question 3: የእርስዎ የት/ት ደረጃ</label>
+                    <input type="text" class="form-control" id="i3" name="School_Level"
+                      placeholder="enter school level" />
+                    <div id="levelError" class="error-message "></div>
+                  </div>
+
+                  <!-- Question 4 -->
+                  <div class="mb-3">
+                    <label for="question4" class="form-label">Question 4: የእርስዎ ሥራ
+                    </label>
+                    <input type="text" class="form-control" id="i4" name="Job_Tittle"
+                      placeholder="enter your job title" />
+                    <div id="jobError" class="error-message"></div>
+
+                  </div>
+
+                  <!-- Question 5 -->
+                  <div class="mb-3">
+                    <label for="question5" class="form-label">Question 5: የእርስዎ ኃይማኖት
+                    </label>
+                    <input type="text" class="form-control" id="i5" name="My_Religion"
+                      placeholder="enter your religion" />
+                    <div id="religionError" class="error-message"></div>
+
+                  </div>
+
+
+                  <!-- Question 6 -->
+                  <div class="mb-3">
+                    <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
+                    </label>
+                    <input type="text" class="form-control" id="i6" name="Live_In" placeholder="enter where you live" />
+                    <div id="liveError" class="error-message "></div>
+                  </div>
+
+                  <!-- Question 7 -->
+                  <div class="mb-3">
+                    <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
+                    </label>
+                    <input type="text" class="form-control" id="i7" name="Live_In_Future"
+                      placeholder="enter where you live in the future" />
+                    <div id="futureError" class="error-message "></div>
+                  </div>
+
+                  <!-- Question 8 -->
+                  <div class="mb-3">
+                    <label for="question8" class="form-label">Question 8: የእርስዎ ስልክ
+                    </label>
+                    <input type="number" class="form-control" id="i8" name="My_Phone" placeholder="enter your phone" />
+                    <div id="phoneError" class="error-message invalid-feedback"></div>
+                  </div>
+
+                  <!-- Question 9 -->
+                  <div class="mb-3">
+                    <label for="question9" class="form-label">Question 9: የእርስዎ ኢሜል
+                    </label>
+                    <input type="email" class="form-control" id="i9" name="My_Email" placeholder="enter @email" />
+                    <div id="emailError" class="error-message"></div>
+
+                    <!-- <input type="file" value="20" name="screenshot"> -->
+
+                  </div>
+                  <!-- Submit Button -->
+                  <!-- <button   class="btn btn-primary mt-2" style="width: 231px;" onclick="f1validate()">Next -></button> -->
+                  <!-- <input type="button" class="btn btn-primary mt-2" style="width: 231px;" value="Next ->" onclick="f1validate()"> -->
+                  <button type="button" class="btn btn-primary mt-2" style="width: 231px;"
+                    onclick="f1validate()">next</button>
+                  <!-- </form> -->
+
+
                 </div>
               </div>
 
-              <!-- Question 3 -->
-              <div class="mb-3">
-                <label for="question3" class="form-label">Question 3: የት/ት ደረጃ</label>
-                <input type="text" class="form-control" id="question" name="age" placeholder="enter school level"
-                  required />
+            </div>
+
+            <!--  -->
+
+
+
+
+            <!-- form2 -->
+
+            <div class="col-lg-4">
+
+
+              <div class="flex-item form-2 disable-form" id="form2">
+                <div class="custom-form f2validate"
+                  style="background-color: #f4f4f4; border-radius: 10px; padding: 29px">
+                  <h5>መተዋወቅ የምፈልገው ሰው</h5>
+                  <!-- <form class="custom-form f2validate" name="form2"   > -->
+                  <!-- Question 1 -->
+                  <div class="mb-3">
+                    <label for="question2" class="form-label">Question 1: ፆታ</label>
+                    <input type="text" class="form-control" id="f2q1" name="gender" placeholder="enter gender" />
+                    <div id="genderError" class="error-message"></div>
+                  </div>
+
+                  <!-- Question 2 -->
+                  <div class="mb-3">
+                    <label for="question2" class="form-label">Question 2: እድሜ</label>
+                    <div class="input-container">
+                      <div class="input-item">
+                        <input type="text" class="form-control" id="f2q2" placeholder="min age" name="minage">
+                        <div id="minageError" class="error-message"></div>
+
+                      </div>
+                      <div class="input-item">
+                        <input type="number" class="form-control" placeholder="max age" name="maxage" id="i12">
+                        <div id="maxageError" class="error-message"></div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Question 3 -->
+                  <div class="mb-3">
+                    <label for="question3" class="form-label">Question 3: የት/ት ደረጃ</label>
+                    <input type="text" class="form-control" id="f2q3" name="school" placeholder="enter school level" />
+                    <div id="schoolError" class="error-message"></div>
+
+                  </div>
+
+                  <!-- Question 4 -->
+                  <div class="mb-3">
+                    <label for="question4" class="form-label">Question 4: ሥራ
+                    </label>
+                    <input type="text" class="form-control" id="f2q4" name="work" placeholder="enter school" />
+                  </div>
+                  <div id="schoolnError" class="error-message"></div>
+
+
+                  <!-- Question 5 -->
+                  <div class="mb-3">
+                    <label for="question5" class="form-label">Question 5: ኃይማኖት
+                    </label>
+                    <input type="text" class="form-control" id="f2q5" name="religion2" placeholder="enter religion" />
+                  </div>
+                  <div id="religion2Error" class="error-message"></div>
+
+
+                  <!-- Question 6 -->
+                  <div class="mb-3">
+                    <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
+                    </label>
+                    <input type="text" class="form-control" id="f2q6" name="couples"
+                      placeholder="enter where couples live" />
+                    <div id="coupleError" class="error-message"></div>
+                  </div>
+
+                  <!-- Question 7 -->
+                  <!-- <div class="mb-3">
+               <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
+               </label>
+               <input type="text" class="form-control" id="question" name="enter where you planning n=in future"
+                 placeholder="enter ??" required />
+               <div id="currentLocationError" class="error-message"></div>
+             </div> -->
+
+                  <!-- Question 8 -->
+                  <!-- <div class="mb-3">
+               <label for="question8" class="form-label">Question 8: ስልክ
+               </label>
+               <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                 required />
+               <div id="futurePlanError" class="error-message"></div>
+             </div> -->
+
+                  <!-- Question 9 -->
+                  <!-- <div class="mb-3">
+               <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
+               </label>
+               <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
+                 required />
+               <div id="futurePlanError" class="error-message"></div>
+             </div> -->
+                  <!-- Submit Button -->
+                  <!-- <input type="button" class="btn btn-primary mt-3" style="width: 231px;" value="Submit" onclick="f2validate"> -->
+                  <!-- <button type="submit" class="btn btn-primary mt-3" style="width: 231px;"  onclick="f2validate()">SUBMIT</button> -->
+
+                  <div class="btn btn-primary mt-2" style="width: 231px;" onclick="f2validate()">next</div>
+
+
+                  <!-- </form> -->
+
+
+                </div>
+                <!-- * go to payment section -->
               </div>
 
-              <!-- Question 4 -->
-              <div class="mb-3">
-                <label for="question4" class="form-label">Question 4: ሥራ
-                </label>
-                <input type="text" class="form-control" id="question" name="school" placeholder="enter school"
-                  required />
-              </div>
 
-              <!-- Question 5 -->
-              <div class="mb-3">
-                <label for="question5" class="form-label">Question 5: ኃይማኖት 
-                </label>
-                <input type="text" class="form-control" id="question" name="work" placeholder="enter religion" required />
-              </div>
 
-              <!-- Question 6 -->
-              <div class="mb-3">
-                <label for="question6" class="form-label">Question 6: አሁን የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="religion" placeholder="enter where couples live"
-                  required />
-                <div id="religionError" class="error-message"></div>
-              </div>
+            </div>
 
-              <!-- Question 7 -->
-              <!-- <div class="mb-3">
-                <label for="question7" class="form-label">Question 7: ወደፊት የሚኖሩበት አገር
-                </label>
-                <input type="text" class="form-control" id="question" name="enter where you planning n=in future"
-                  placeholder="enter ??" required />
-                <div id="currentLocationError" class="error-message"></div>
-              </div> -->
+            <!--  -->
 
-              <!-- Question 8 -->
-              <!-- <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: ስልክ
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div> -->
 
-              <!-- Question 9 -->
-              <!-- <div class="mb-3">
-                <label for="question8" class="form-label">Question 8: የእርስዎ ኢሜል
-                </label>
-                <input type="text" class="form-control" id="question" name="futurePlan" placeholder="enter future plan"
-                  required />
-                <div id="futurePlanError" class="error-message"></div>
-              </div> -->
-              <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary mt-3" style="width: 231px;">Submit</button>
-            </form>
-          </div>
-          * go to payment section
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4" >
-      <!-- Right column content -->
-      <div class="flex-item" style="border-color: #6200C3; border-radius: 10px; background-color: #f3e6ff;">
-         <h4>Complete Form</h4>
-      <form>
-        <!-- Email and Phone in the same row -->
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <label for="inputEmail" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" placeholder="john.doe@gmail.com">
-          </div>
-          <div class="col-md-6">
-            <label for="inputPhone" class="form-label">Phone number</label>
-            <input type="tel" class="form-control" id="inputPhone" placeholder="555-555-5555">
-          </div>
-        </div>
 
-    <!-- payment methods-->
-        <div class="accordion-body">
-          <fieldset class="mt-4 mb-4">
-            <legend class="h5">Choose a Payment Method</legend>
-            <div class="font-bold">Select payment Method</div>
-             <p class="h4">$20</p>
-            <label class="mr-3 mt-3">
-              <img src="assests/visa-light.png" width="50px" />
-              <input class="mr-2" type="radio" name="set3" value="option1" />
-              Credit Card
-            </label>
-            
-            <label style="margin-left: 20px">
-              <img src="assests/paypal-light.png" width="50px" />
-              <input type="radio" name="set3" value="option2" />
-              PayPal
-            </label>
 
- <div class="container mt-3">
-    <div class="row justify-content-center">
-      <div class="">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">Credit Card Information</h5>
-            <form>
-              <div class="form-group">
-                <label for="cardNumber">Card Number</label>
-                <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
-              </div>
-              <div class="form-group label-inline mt-2">
-                <label for="expirationDate">Expiration Date</label>
-                <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
-                <label for="cvv" class="">CVV</label>
-                <input type="text" class="form-control" id="cvv" placeholder="CVV">
-              </div>
-              <div class="form-group mt-2">
-                <label for="cardholderName">Cardholder Name</label>
-                <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
-              </div>
-              <button type="submit" class="btn btn-primary mt-2">Submit</button>
-            </form>
-          </div>
+
+            <!-- form3 -->
+
+            <div class="col-lg-4">
+
+
+              <div class="flex-item disable-form"
+                style="border-color: #6200C3; border-radius: 10px; background-color: #f3e6ff;" name="form3" id="form3">
+                <!-- <h4>Complete Form</h4>
+                    Email and Phone in the same row
+                    <div class="row mb-3">
+                      <div class="col-md-6">
+                        <label for="inputEmail" class="form-label">Email address</label>
+                        <input type="email" id="email" class="form-control" id="inputEmail"
+                          placeholder="john.doe@gmail.com">
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputPhone" class="form-label">Phone number</label>
+                        <input type="tel" class="form-control" id="phonenumber" placeholder="555-555-5555">
+                      </div>
+                    </div> -->
+
+
+
+                <!-- payment methods-->
+                <div class="accordion-body">
+                  <fieldset class="mt-4 mb-4">
+                    <legend class="h5">Choose a Payment Method</legend>
+                    <div class="font-bold">Select payment Method</div>
+                    <p class="h4">$20</p>
+                    <!-- <label class="mr-3 mt-3">
+             <img src="assests/visa-light.png" width="50px" />
+             <input class="mr-2" type="radio" name="set3" value="option1" />
+             Credit Card
+           </label>
+           <label style="margin-left: 20px">
+             <img src="assests/paypal-light.png" width="50px" />
+             <input type="radio" name="set3" value="option2" />
+             PayPal
+           </label> -->
+                  </fieldset>
+                </div>
+                <!-- <button type="button" onclick="getQuestions()"> submit  check</button> -->
+
+                <div id="paypal-button-container"></div>
+
+
+                <!-- <button type="button" class="btn btn-primary" style="width: 231px;">Submit Form</button> -->
+
+
+
+                <!-- ============================================================================ -->
+
+                <!-- <div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Credit Card Information</h5>
+          <form>
+            <div class="form-group">
+              <label style="color:#6200c3" for="cardNumber">Card Number</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+            </div>
+            <div class="form-group label-inline mt-2">
+              <label style="color:#6200c3" for="expirationDate">Expiration Date</label>
+              <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+              <label style="color:#6200c3" for="cvv" class="">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="CVV">
+            </div>
+            <div class="form-group mt-2">
+              <label style="color:#6200c3" for="cardholderName">Cardholder Name</label>
+              <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </form>
         </div>
       </div>
     </div>
   </div>
+</div> -->
 
-          </fieldset>
+
+
+
+                <!-- ============================================================================= -->
+
+
+
+                <!-- <button type="button" class="btn btn-primary mt-3" style="width: 231px; " data-bs-target="#my-mod" data-bs-toggle="modal">Proceed Payment</button> -->
+
+
+                <!-- <button type="submit" class="btn btn-primary mt-3" style="width: 231px;"  onclick="f3validate()" id="sub" >Submit Form</button> -->
+
+
+
+
+
+                <!-- </form> -->
+
+
+                <p class="h6">
+                  <!-- one client and  servuce copy email sent!!!!-->
+                  <!-- የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝ ይደርሰዋል። -->
+                  <!-- ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
+       ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት:: -->
+                </p>
+              </div>
+
+
+
+            </div>
+
+
+            <!--  -->
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <!-- modalbox -->
+
+          <div class="modal modal-sm" id="my-mod">
+
+            <div class="modal-dialog modal-lg">
+              <div class=" modal-content">
+
+                <div class="modal-header">
+                  <img src="assests/logo.png" alt="" class="img-fluid w-50">
+                  <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body  text-center">
+
+                  <img src="assests/check.svg" alt="" class="img-fluid w-25">
+                  <h3>Thank You</h3>
+                  <h4>Your form has been submitted sucessfully</h4>
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <!--  -->
+
+
         </div>
-        <button type="submit" class="btn btn-primary" style="width: 231px;">Submit Form</button>
-      </form>
-       <p class="h6">
-        <!-- one client and  servuce copy email sent!!!!-->
-        <!-- የክፍያ ፎርሙን ሰብሚት ሲያደርግ ወዲያው የማረጋገጫ ደረሰኝ ይደርሰዋል። -->
-        <!-- ለእኛም የእርሱ ግልባጭ ኮፒ ይደርሰናል። ከተስማማችሁ በኃላ ፀሎትና የእጮኝምነት ትምህርት
-        ከፈለጋችሁ በአድራሻችን ኮንታክት ያድርጉን የምትል ማስታወሻ ከደረሰኙ ጋር ይላክለት:: -->
-       </p> 
       </div>
-        * Please fill out all the forms from the left.
+
+
+
+
+
     </div>
-  </div>
-</div>
 
 
- <!-- footer -->
-<div
-      id="cause"
-      class="container-fluid cause-info"
-      style="background-color: white"
-    >
+
+
+
+
+
+
+
+
+    <!-- ======================================================================================================= -->
+
+
+    <!-- footer -->
+    <div id="cause" class="container-fluid cause-info" style="background-color: white">
       <div class="row">
         <!-- footer -->
         <footer class="container py-5">
@@ -551,29 +680,17 @@ input[type="text"] {
               <div class="container-fluid social-media-section mt-3">
                 <div class="row">
                   <div class="col-12 text-center">
-                    <span style="color: #6200c3; font-size: 14px"
-                      >Follow Us on Social Media</span
-                    >
+                    <span style="color: #6200c3; font-size: 14px">Follow Us on Social Media</span>
                     <!-- Add your social media icons or links here -->
                     <p>
                       <!-- Facebook icon -->
-                      <a
-                        href="https://www.facebook.com/yourfacebookpage"
-                        target="_blank"
-                        class="social-icon facebook-icon"
-                        ><i class="fab fa-facebook-square"></i
-                      ></a>
+                      <a href="https://www.facebook.com/yourfacebookpage" target="_blank"
+                        class="social-icon facebook-icon"><i class="fab fa-facebook-square"></i></a>
                       <!-- Example: Twitter icon -->
-                      <a
-                        href="https://twitter.com/yourtwitterhandle"
-                        target="_blank"
-                        class="social-icon twitter-icon"
-                        ><i class="fab fa-twitter-square"></i
-                      ></a>
+                      <a href="https://twitter.com/yourtwitterhandle" target="_blank"
+                        class="social-icon twitter-icon"><i class="fab fa-twitter-square"></i></a>
                     </p>
-                    <small class="d-block mb-3 text-muted"
-                      >&copy;2024 Salt Of The Earth.</small
-                    >
+                    <small class="d-block mb-3 text-muted">&copy;2024 Salt Of The Earth.</small>
                   </div>
                 </div>
               </div>
@@ -624,9 +741,245 @@ input[type="text"] {
         </footer>
       </div>
     </div>
+
+
+
+
+
+
   </body>
   <!-- bootstrap  -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <!-- Include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Include Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
 
-  </html>
+
+  <!-- firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+
+  <!-- // paypal // -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=ARSzdCz3Odvqj_Ma3-Gvl0utOxdATZiMMzi8uJgCB0S_wpZ64L30lZsHfqZl6XCHUOc6_URZbPKmdRaq&disable-funding=paylater"></script>
+
+
+    <!-- axios import -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+
+  <script>
+
+
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyBCrrOLZNZGl31lpjELCwcQONWjc2Nddg8",
+      authDomain: "saltofheart-1e10e.firebaseapp.com",
+      projectId: "saltofheart-1e10e",
+      storageBucket: "saltofheart-1e10e.appspot.com",
+      messagingSenderId: "693289956311",
+      appId: "1:693289956311:web:3232330f5d059d9edd1192",
+      measurementId: "G-J328WPK2T3"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    var userdb = firebase.database().ref("newFriendFinder");
+
+    // const getTodayDate = () => {
+    //   const date = new Date();
+    //   return date.toISOString()
+
+    // }
+
+    const sendMail = async (formValue) => {
+      const response = await axios.post("https://app-pxy2i5iqyq-uc.a.run.app/mail", {...formValue , type:"newFriendFinder"}  )
+      // console.log(formValue , "formValue")
+
+      console.log(response.data)
+
+      if(response?.data?.success){
+        $('#my-mod').modal('toggle');
+      }
+    }
+
+
+    const showErrorMessage = () => {
+      let msgPara = document.getElementById("errorMsg")
+      msgPara.classList.remove('d-none')
+    }
+
+    paypal.Buttons({
+
+      createOrder: function (data, actions) {
+
+        let isAllFormsValid = f3validate()
+        let msgPara = document.getElementById("errorMsg")
+        msgPara.classList.add('d-none')
+
+        if (!isAllFormsValid) return showErrorMessage()
+
+        let formValue = getQuestions()
+
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: "20"
+            }
+          }],
+          application_context: {
+              shipping_preference: 'NO_SHIPPING'
+            }
+        })
+      },
+
+      onError: function (err) {
+        console.log('An error occurred while processing your payment. Please try again.');
+      },
+
+      onApprove: function (data, actions) {
+
+        return actions.order.capture().then(function (details) {
+
+          var payerName = details.payer.name.given_name;
+          var payerEmail = details.payer.email_address;
+          var transactionId = details.id;
+          var amount = details.purchase_units[0].amount.value;
+          var currency = details.purchase_units[0].amount.currency_code;
+
+
+          var paypal = { payerName, payerEmail, transactionId ,amount, currency  }
+
+          let formValue = getQuestions()
+          formValue = { ...formValue, paypal }
+
+          saveMessages(formValue).then(() => {
+            sendMail(formValue)
+          }).catch((err) => {
+            console.log(err, "something went wrong")
+          })
+
+          // if(paypal.payerEmail === formValue.findFriend.i9){
+
+          // }else{
+          //   alert("your email Adress is not matched")
+          // }
+          console.log(formValue, 'new Friend Finder pages')
+
+        });
+      }
+    }).render('#paypal-button-container');
+
+
+    function getQuestions() {
+      var newFriendFinder = {
+        findFriend: {
+          i1: document.getElementById("i1").value,
+          i2: document.getElementById("i2").value,
+          i3: document.getElementById("i3").value,
+          i4: document.getElementById("i4").value,
+          i5: document.getElementById("i5").value,
+          i6: document.getElementById("i6").value,
+          i7: document.getElementById("i7").value,
+          i8: document.getElementById("i8").value,
+          i9: document.getElementById("i9").value,
+
+        },
+        meetSomeOne: {
+          f2q1: document.getElementById("f2q1").value,
+          f2q2: document.getElementById("f2q2").value,
+          f2q3: document.getElementById("f2q3").value,
+          f2q4: document.getElementById("f2q4").value,
+          f2q5: document.getElementById("f2q5").value,
+          f2q1: document.getElementById("f2q6").value,
+        },
+        
+      }
+
+      return newFriendFinder
+
+    }
+
+    const saveMessages = (formVals) => {
+      return new Promise((resolve, reject) => {
+        var formVal = userdb.push();
+        formVal.set({
+          ...formVals
+        })
+          .then(() => {
+            console.log("Data saved successfully:", formVals);
+            resolve(true); // Resolve the promise indicating success
+          })
+          .catch((error) => {
+            console.error("Error saving data:", error);
+            reject(error); // Reject the promise indicating failure
+          });
+      });
+    };
+
+    const getElementVal = (name) => {
+      return document.getElementsByName(name).value;
+    }
+
+    var user = []
+
+    function f1validate() {
+      let isForm1Valid = validateForm(".form-1")
+
+      if (isForm1Valid) {
+        let form2 = document.getElementById("form2")
+
+        form2.style.opacity = '1'
+        form2.style.pointerEvents = 'auto'
+      }
+    }
+
+    function f2validate() {
+      let isForm2Valid = validateForm(".form-2")
+
+      if (isForm2Valid) {
+        let form3 = document.getElementById("form3")
+
+        form3.style.opacity = '1'
+        form3.style.pointerEvents = 'auto'
+
+      }
+    }
+
+    function f3validate() {
+      let isForm1Valid = validateForm(".form-1")
+      let isForm2Valid = validateForm(".form-2")
+
+      let isValid = true
+      if (!isForm1Valid || !isForm2Valid) {
+        isValid = false
+      }
+
+      return isValid
+    }
+
+    function validateForm(formName) {
+      var inputs = document.querySelectorAll(`${formName} input`);
+      var isValid = true;
+
+      inputs.forEach(function (input) {
+        var value = input.value.trim();
+
+        if (value === '') {
+          isValid = false;
+        }
+      });
+
+      return isValid;
+    }
+
+  </script>
+
+</body>
+
+</html>
