@@ -1,480 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="shortcut icon"
-      type="image/jpg"
-      href="assests/bulletoficonafrica.png"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <title>Salt of the Earth</title>
-<script src="forms-script.js"></script>
 
-  </head>
-  <style>
-    .text-center-counsleling {
-      padding: 5px;
-      background-color: #6200c3;
-      color: white;
-      /* border-radius: 7px; */
-      text-align: center;
-    }
-    .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-      color: #6200c3;
-      background-color: white;
-      border: 2px solid #6200c3;
-    }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/jpg" href="assests/bulletoficonafrica.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Salt of the Earth</title>
+  <script src="forms-script.js"></script>
+
+</head>
+<style>
+  .text-center-counsleling {
+    padding: 5px;
+    background-color: #6200c3;
+    color: white;
+    /* border-radius: 7px; */
+    text-align: center;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    color: #6200c3;
+    background-color: white;
+    border: 2px solid #6200c3;
+  }
 
 
-    .btn.active {
-      color: #6200c3;
-      background-color: white;
-      border: 2px solid #6200c3;
-    } 
+  .btn.active {
+    color: #6200c3;
+    background-color: white;
+    border: 2px solid #6200c3;
+  }
 
 
-    /* button#pills-profile-tab.nav-link {
+  /* button#pills-profile-tab.nav-link {
       color: #6200c3 !important;
     } */
 
-    .form-check-input:checked {
+  .form-check-input:checked {
     background-color: #6200c3;
     border-color: #6200c3;
-}
+  }
+</style>
 
-
-
-
-  </style>
-
-  <body>
-    <!-- First Navbar with Logo on Left and Two Items on Far Right -->
-    <nav class="navbar navbar-light navbar-first bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"
-          ><img src="assests/logo.svg" width="300px"
-        /></a>
-        <ul class="navbar-nav ms-auto">
-          <!-- <li class="nav-item">
+<body>
+  <!-- First Navbar with Logo on Left and Two Items on Far Right -->
+  <nav class="navbar navbar-light navbar-first bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><img src="assests/logo.svg" width="300px" /></a>
+      <ul class="navbar-nav ms-auto">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="membersignin.html">Membership</a>
         </li> -->
-          <li class="nav-item">
-            <a
-              type="button"
-              class="btn btn-primary"
-              class="nav-link"
-              href="donation.html"
-              >Give
-              <i class="fa fa-heart text-warning" style="margin-left: 10px"></i
-            ></a>
+        <li class="nav-item">
+          <a type="button" class="btn btn-primary" class="nav-link" href="donation.html">Give
+            <i class="fa fa-heart text-warning" style="margin-left: 10px"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Second Navbar with Centered Items -->
+  <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
+    <div class="container">
+      <!-- Hamburger icon for small screens -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link mr-2" href="about.html">About Us</a>
+          </li>
+
+          <!--           <li class="nav-item mb-2">
+            <a class="nav-link" href="blog.html">Blog</a>
+          </li> -->
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="videos.html">Videos</a>
+          </li>
+          <li class="nav-item dropdown mb-2">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Counseling
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="border: 1px solid #6200c3">
+              <a class="dropdown-item" href="counseling_UnMarried.html">ላላገቡ</a>
+              <a class="dropdown-item" href="counseling_Married .html">ላገቡ</a>
+            </div>
+          </li>
+          <li class="nav-item mb-2">
+            <a class="nav-link" href="newFriendFinder.html">አዲስ ጓደኛ እፈልጋለሁ</a>
           </li>
         </ul>
       </div>
-    </nav>
-    <!-- Second Navbar with Centered Items -->
-    <nav class="navbar navbar-expand-lg navbar-light navbar-second bg-light">
-      <div class="container">
-        <!-- Hamburger icon for small screens -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    </div>
+  </nav>
 
-        <div
-          class="collapse navbar-collapse justify-content-center"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a class="nav-link mr-2" href="about.html">About Us</a>
-            </li>
+  <h3 class="text-center-counsleling">Form: Counseling page</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9"> <!-- 75% width for left column on md screens and above -->
+        <div class="custom-section">
+          <!-- Content for the left column -->
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
 
-            <!--           <li class="nav-item mb-2">
-            <a class="nav-link" href="blog.html">Blog</a>
-          </li> -->
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="videos.html">Videos</a>
+
+              <!-- <button class="nav-link active " href="counseling_UnMarried.html" aria-controls="tab1" role="tab" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="tab1" aria-selected="true">ላላገቡ </button> -->
+              <a href="counseling_UnMarried.html" class="btn active ">ላላገቡ </a>
+
+
             </li>
-            <li class="nav-item dropdown mb-2">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Counseling
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdown"
-                style="border: 1px solid #6200c3"
-              >
-                <a class="dropdown-item" href="counseling_UnMarried.html">ላላገቡ</a>
-                <a class="dropdown-item" href="counseling_Married .html">ላገቡ</a>
-              </div>
-            </li>
-            <li class="nav-item mb-2">
-              <a class="nav-link" href="newFriendFinder.html">አዲስ ጓደኛ እፈልጋለሁ</a>
+            <li class="nav-item" role="presentation">
+
+
+              <!-- <button class="nav-link " href="counseling_Married .html" aria-controls="tab2" id="pills-profile-tab"  type="button" role="tab" aria-controls="tab2" aria-selected="false">ላገቡ</button> -->
+              <a href="counseling_Married .html" class="btn ">ላገቡ</a>
+
+
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-
-    <h3 class="text-center-counsleling">Form: Counseling page</h3>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-9"> <!-- 75% width for left column on md screens and above -->
-          <div class="custom-section">
-            <!-- Content for the left column -->
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation">
-               
-               
-                <!-- <button class="nav-link active " href="counseling_UnMarried.html" aria-controls="tab1" role="tab" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="tab1" aria-selected="true">ላላገቡ </button> -->
-                <a href="counseling_UnMarried.html" class="btn active ">ላላገቡ </a>
-
-             
-              </li>
-              <li class="nav-item" role="presentation">
-             
-             
-                <!-- <button class="nav-link " href="counseling_Married .html" aria-controls="tab2" id="pills-profile-tab"  type="button" role="tab" aria-controls="tab2" aria-selected="false">ላገቡ</button> -->
-                <a href="counseling_Married .html" class="btn ">ላገቡ</a>
-
-             
-              </li>   
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                <!-- unmarried form -->
-                <div class="flex-item">
-                  <div
-                    class=""
-                    style="
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              <!-- unmarried form -->
+              <div class="flex-item">
+                <div class="" style="
                       background-color: #f4f4f4;
                       border-radius: 10px;
                       padding: 29px;
                       border: 2px solid #eaeaea;
-                    "
-                  >
-                    <form class="custom-form p-5" name="cfm" id="f1"  >
-                      <p>
-                        <span style="font-weight: bold; color: #6200c3;"
-                          >ላላገቡ:- Select 1 of 12 questions.</span
-                        >
-                      </p>
-    
-                      <!-- Question 1 -->
-                      <div class="mt-2 mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q1"
-                          value="male"
-                          required
-                        />
-                        <label class="form-label" for="q1"
-                          >Question 1: <span>እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?</span>
-                        </label>
-                        <div id="genderError" class="error-message"></div>
-                      </div>
-    
-                      <!-- Question 2 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q2"
-                          value="male"
-                          required
-                        />
-                        <label for="question2" class="form-label" for="q2"
-                          >Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ ?</label
-                        >
-                        <div id="codeError" class="error-message"></div>
-                      </div>
-                      <!-- Question 3 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q3"
-                          value="male"
-                          required
-                        />
-                        <label for="question3" class="form-label" for="q3"
-                          >Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ ?</label
-                        >
-                        <div id="ageError" class="error-message"></div>
-                      </div>
-    
-                      <!-- Question 4 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q4"
-                          value="male"
-                          required
-                        />
-                        <label for="question4" class="form-label" for="q4"
-                          >Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን ምን ናቸው ?
-                        </label>
-    
-                        <div id="schoolError" class="error-message"></div>
-                      </div>
-    
-                      <!-- Question 5 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q5"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question5" class="form-label" for="q5"
-                          >Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል ጊዜስ
-                          በእጮኝምነት እንቆይ ?/
-                        </label>
-                        <div id="workError" class="error-message"></div>
-                      </div>
-    
-                      <!-- Question 6 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q6"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question6" class="form-label" for="q6"
-                          >Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን ናቸው ?
-                        </label>
-    
-                        <div id="religionError" class="error-message"></div>
-                      </div>
-    
-                      <!-- Question 7 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q7"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question7" class="form-label" for="q7"
-                          >Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር ይኖርብናል ወይ ?
-                        </label>
-    
-                        <div
-                          id="currentLocationError"
-                          class="error-message"
-                        ></div>
-                      </div>
-    
-                      <!-- Question 8 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q8"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question8" class="form-label" for="q8"
-                          >Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት እችላለሁ ወይ ?
-                        </label>
-    
-                        <div id="futurePlanError" class="error-message"></div>
-                      </div>
-                      <!-- Question 9 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q9"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question8" class="form-label" for="q9"
-                          >Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት ብንሞካከርስ
-                        </label>
-    
-                        <div id="futurePlanError" class="error-message"></div>
-                      </div>
-                      <!-- Question 10 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q10"
-                          value="male"
-                          required
-                        />
-    
-                        <label for="question8" class="form-label" for="q10"
-                          >Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና የእርግዝና መከላከያ
-                          መጠቀም ኃጢያት ነው ?
-                        </label>
-    
-                        <div id="futurePlanError" class="error-message"></div>
-                      </div>
-                      <!-- Question 11 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q10"
-                          value="male"
-                          required
-                        />
-                        <label for="question8" class="form-label"
-                          >Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል ያስፈልጋል
-                          ወይ ?
-                        </label>
-    
-                        <div id="futurePlanError" class="error-message"></div>
-                      </div>
-                      <!-- Question 12 -->
-                      <div class="mb-3">
-                        <input
-                          class="form-check-input"
-                          type="radio"
-                          name="gender"
-                          id="q10"
-                          value="male"
-                          required
-                        />
-                        <label for="question8" class="form-label"
-                          >Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /
-                          ፎርም
-                        </label>
-    
-                        <div id="futurePlanError" class="error-message"></div>
-                      </div>
-                     <p style="color: #6200c3">Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ (1) ምርጫ ብቻ ያስቀምጡ::</p> 
-                      <!-- Submit Button -->
-                      
-                        <button type="button" class="btn btn-primary mt-2" onclick="sub()">
-                          Submitt
-                        </button>
+                    ">
+                  <form class="custom-form p-5" onsubmit="submitform()" id="userdata" name="cfm" id="f1">
+                    <p>
+                      <span style="font-weight: bold; color: #6200c3;">ላላገቡ:- Select 1 of 12 questions.</span>
+                    </p>
 
-
-
-
-                    </form>
-                    <div class="col-lg-12">
-                      <label id="error"></label>
+                    <!-- Question 1 -->
+                    <div class="mt-2 mb-3">
+                      <input class="form-check-input" type="radio" checked name="question" id="q1"
+                        value="Question 1: እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?" required />
+                      <label class="form-label" for="q1">Question 1: እጮኛ ለመያዝ የጌታን ፈቃድ እንዴት አውቃለሁ?
+                      </label>
+                      <div id="genderError" class="error-message"></div>
                     </div>
+
+                    <!-- Question 2 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q2"
+                        value="Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ ?" required />
+                      <label for="question2" class="form-label" for="q2">Question 2: በእድሜ ተበላልጠን ብንጋባ ችግር አለው ወይ
+                        ?</label>
+                      <div id="codeError" class="error-message"></div>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q3"
+                        value="Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ ?" required />
+                      <label for="question3" class="form-label" for="q3">Question 3: በኃይማኖት የተለያየን ነንና መጋባት እንችላለን ወይ
+                        ?</label>
+                      <div id="ageError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 4 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q4"
+                        value="Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን ምን ናቸው ?" required />
+                      <label for="question4" class="form-label" for="q4">Question 4: በእጮኛየ እንደተወደድኩ የማውቅባቸው ምልክቶች ምን ምን
+                        ናቸው ?
+                      </label>
+
+                      <div id="schoolError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 5 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q5"
+                        value=">Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል ጊዜስ በእጮኝምነት እንቆይ ?/" required />
+
+                      <label for="question5" class="form-label" for="q5">Question 5: በእጮኝነት ጊዜ እንዴት እንመላለስ ? / ምን ያህል
+                        ጊዜስ
+                        በእጮኝምነት እንቆይ ?/
+                      </label>
+                      <div id="workError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 6 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q6"
+                        value="Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን ናቸው ?" required />
+
+                      <label for="question6" class="form-label" for="q6">Question 6: እጮኝነት ማቋረጥ የሚቻልባቸው መንገዶች ምን ምን ናቸው
+                        ?
+                      </label>
+
+                      <div id="religionError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 7 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q7"
+                        value="Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር ይኖርብናል ወይ ?" required />
+
+                      <label for="question7" class="form-label" for="q7">Question 7: ከጋብቻ በፊት ስለ ገንዘብና ንብረት መነጋገር ይኖርብናል
+                        ወይ ?
+                      </label>
+
+                      <div id="currentLocationError" class="error-message"></div>
+                    </div>
+
+                    <!-- Question 8 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q8"
+                        value="Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት እችላለሁ ወይ ?" required />
+
+                      <label for="question8" class="form-label" for="q8">Question 8: የኤች አይ ቪ ቫይረስ በደሜ ውስጥ አለና ማግባት
+                        እችላለሁ ወይ ?
+                      </label>
+
+                      <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 9 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q9"
+                        value="Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት ብንሞካከርስ" required />
+
+                      <label for="question8" class="form-label" for="q9">Question 9: በወሲብ እንጣጣም እንደሁ ለማወቅ ከጋብቻ በፊት
+                        ብንሞካከርስ
+                      </label>
+
+                      <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 10 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q10"
+                        value="Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና የእርግዝና መከላከያ መጠቀም ኃጢያት ነው " required />
+
+                      <label for="question8" class="form-label" for="q10">Question 10: ከጋብቻ በፊት የተፀነሰን ፅንስ ማስወረድና የእርግዝና
+                        መከላከያ
+                        መጠቀም ኃጢያት ነው ?
+                      </label>
+
+                      <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 11 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q11"
+                        value="Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል ያስፈልጋል ወይ ?" required />
+                      <label for="question8" class="form-label">Question 11: እስከተጋባባን ድረስ ሽምግልና ጥሎሽ ሰርግ መልስ ቅልቅል ያስፈልጋል
+                        ወይ ?
+                      </label>
+
+                      <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <!-- Question 12 -->
+                    <div class="mb-3">
+                      <input class="form-check-input" type="radio" name="question" id="q12"
+                        value="Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /ፎርም" required />
+                      <label for="question8" class="form-label">Question 12: ለሰርጋችን እንዴት እንዘጋጅ ? / የሰርግ ቀን ምሽት ማብራሪያ /
+                        ፎርም
+                      </label>
+
+                      <div id="futurePlanError" class="error-message"></div>
+                    </div>
+                    <p style="color: #6200c3">Note: *ከላይ ከ 1-12 ካለው ውስጥ የሚፈልጉትን አንድ (1) ምርጫ ብቻ ያስቀምጡ::</p>
+                  </form>
+                  <div class="col-lg-12">
+                    <label id="error"></label>
                   </div>
                 </div>
               </div>
-         
-         
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                <!-- married form -->
-              
+            </div>
 
 
-<!-- married============================== -->
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              <!-- married form -->
 
-              </div>
+
+
+              <!-- married============================== -->
+
             </div>
           </div>
         </div>
-        <div class="col-md-3"> <!-- 25% width for right column on md screens and above -->
-         
-          <div class="custom-section">
-            <!-- Content for the right column -->
-             <h5 class="text-center mb-4 mt-4" style="color: #6200c3;">
+      </div>
+      <div class="col-md-3"> <!-- 25% width for right column on md screens and above -->
+
+        <div class="custom-section">
+          <!-- Content for the right column -->
+          <h5 class="text-center mb-4 mt-4" style="color: #6200c3;">
             Choose session & payment Options
           </h5>
-            <div class="flex-item">
-              <div class="" style="border: 1px solid #6200c3; padding: 29px; border-radius: 10px; background-color: #f3e6ff;" id="f2">
-                <form>
-                  <fieldset>
-                    <legend>
-        
-                      <h6>ክፍያ / Select One from payment</h6>
-                    </legend>
-                    <label>
-                      <input type="radio" name="set1" value="option1" /> $50 -  ለአንድ
-                      ጊዜ ብቻ
-                    </label>
-                    <label style="">
-                      <input type="radio" name="set1" value="option2" /> $150 -
-                      ለሦስት ሳምንት
-                    </label>
-                    <label style="">
-                      <input type="radio" name="set1" value="option3" /> $300 -
-                      ለስድስት ሳምንት
-                    </label>
-                  </fieldset>
-  
-                  <fieldset class="mt-4">
-                    <legend class="h6">ጊዜ / Time & Day good for you</legend>
-                    <label>
-                      <input type="radio" name="set2" value="option1" /> ማክሰኞ
-                      (Tuesday) 8pm
-                    </label>
-                    <label style="">
-                      <input type="radio" name="set2" value="option2" /> ሐሙስ
-                      (Thursday) 2pm
-                    </label>
-                    <label style="">
-                      <input type="radio" name="set2" value="option3" /> ዓርብ
-                      (Friday) 8pm
-                    </label>
-                  </fieldset>
-  
-                  <div class="accordion-body">
+          <div class="flex-item">
+            <div class=""
+              style="border: 1px solid #6200c3; padding: 29px; border-radius: 10px; background-color: #f3e6ff;" id="f2">
+              <form id="questionForm1">
+                <fieldset>
+                  <legend>
+
+                    <h6>ክፍያ / Select One from payment</h6>
+                  </legend>
+                  <label>
+                    <input type="radio" name="amount" checked value="50" /> $50 - ለአንድ
+                    ጊዜ ብቻ
+                  </label>
+                  <label style="">
+                    <input type="radio" name="amount" value="150" /> $150 -
+                    ለሦስት ሳምንት
+                  </label>
+                  <label style="">
+                    <input type="radio" name="amount" value="300" /> $300 -
+                    ለስድስት ሳምንት
+                  </label>
+                </fieldset>
+
+                <fieldset class="mt-4">
+                  <legend class="h6">ጊዜ / Time & Day good for you</legend>
+                  <label>
+                    <input type="radio" name="time_Date" checked value="8pm" /> ማክሰኞ
+                    (Tuesday) 8pm
+                  </label>
+                  <label style="">
+                    <input type="radio" name="time_Date" value="2pm" /> ሐሙስ
+                    (Thursday) 2pm
+                  </label>
+                  <label style="">
+                    <input type="radio" name="time_Date" value="8pm" /> ዓርብ
+                    (Friday) 8pm
+                  </label>
+                </fieldset>
+                <!-- <button type="button" onclick="logSelectedFields()" class="btn btn-primary mt-2">Submit</button> -->
+
+
+                <div id="paypal-button-container"></div>
+
+
+                <!-- <div class="accordion-body">
                     <fieldset class="mt-4 mb-4">
                       <legend class="h6">Payment Method</legend>
                       <div class="">Select payment Method</div>
@@ -495,170 +364,329 @@
                       </label>
                     </fieldset>
                   </div>
-                  <button
-                    type="submit"
-                    class="btn btn-primary mt-2 text-center"
-                    
-                  >
-                    Processed Checkout
-                  </button>
-  
-                  <!-- <input type="submit" value="Submit"> -->
-                </form>
-              </div>
+ -->
+
+                <!-- ============================================================================ -->
+
+                <!-- <div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Credit Card Information</h5>
+          <form>
+            <div class="form-group">
+              <label style="color:#6200c3" for="cardNumber">Card Number</label>
+              <input type="text" class="form-control" id="cardNumber" placeholder="Enter card number">
+            </div>
+            <div class="form-group label-inline mt-2">
+              <label style="color:#6200c3" for="expirationDate">Expiration Date</label>
+              <input type="text" class="form-control" id="expirationDate" placeholder="MM/YY">
+              <label style="color:#6200c3" for="cvv" class="">CVV</label>
+              <input type="text" class="form-control" id="cvv" placeholder="CVV">
+            </div>
+            <div class="form-group mt-2">
+              <label style="color:#6200c3" for="cardholderName">Cardholder Name</label>
+              <input type="text" class="form-control" id="cardholderName" placeholder="Enter cardholder name">
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+                <!-- ============================================================================= -->
+
+
+
+
+
+
+
+
+
+                <!-- <input type="submit" value="Submit"> -->
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
+  <!-- //modal// -->
+  <div class="modal modal-sm" id="my-mod">
+
+    <div class="modal-dialog modal-lg">
+      <div class=" modal-content">
+
+        <div class="modal-header">
+          <img src="assests/logo.png" alt="" class="img-fluid w-50">
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body  text-center">
+
+          <img src="assests/check.svg" alt="" class="img-fluid w-25">
+          <h3>Thank You</h3>
+          <h4>Your form has been submitted sucessfully</h4>
+
+        </div>
+
+
+      </div>
+
+
     </div>
 
-     <!-- footer -->
-    <div
-      id="cause"
-      class="container-fluid cause-info"
-      style="background-color: white"
-    >
-      <div class="row">
-        <!-- footer -->
-        <footer class="container py-5">
-          <div class="row">
-            <div class="col-12 col-md">
-              <img src="assests/logo.svg" width="300px" />
+  </div>
 
-              <!-- Social Media Section -->
-              <div class="container-fluid social-media-section mt-3">
-                <div class="row">
-                  <div class="col-12 text-center">
-                    <span style="color: #6200c3; font-size: 14px"
-                      >Follow Us on Social Media</span
-                    >
-                    <!-- Add your social media icons or links here -->
-                    <p>
-                      <!-- Facebook icon -->
-                      <a
-                        href="https://www.facebook.com/yourfacebookpage"
-                        target="_blank"
-                        class="social-icon facebook-icon"
-                        ><i class="fab fa-facebook-square"></i
-                      ></a>
-                      <!-- Example: Twitter icon -->
-                      <a
-                        href="https://twitter.com/yourtwitterhandle"
-                        target="_blank"
-                        class="social-icon twitter-icon"
-                        ><i class="fab fa-twitter-square"></i
-                      ></a>
-                    </p>
-                    <small class="d-block mb-3 text-muted"
-                      >&copy;2024 Salt Of The Earth.</small
-                    >
-                  </div>
+  <!-- footer -->
+  <div id="cause" class="container-fluid cause-info" style="background-color: white">
+    <div class="row">
+      <!-- footer -->
+      <footer class="container py-5">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img src="assests/logo.svg" width="300px" />
+
+            <!-- Social Media Section -->
+            <div class="container-fluid social-media-section mt-3">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <span style="color: #6200c3; font-size: 14px">Follow Us on Social Media</span>
+                  <!-- Add your social media icons or links here -->
+                  <p>
+                    <!-- Facebook icon -->
+                    <a href="https://www.facebook.com/yourfacebookpage" target="_blank"
+                      class="social-icon facebook-icon"><i class="fab fa-facebook-square"></i></a>
+                    <!-- Example: Twitter icon -->
+                    <a href="https://twitter.com/yourtwitterhandle" target="_blank" class="social-icon twitter-icon"><i
+                        class="fab fa-twitter-square"></i></a>
+                  </p>
+                  <small class="d-block mb-3 text-muted">&copy;2024 Salt Of The Earth.</small>
                 </div>
               </div>
             </div>
-            <div class="col-6 col-md">
-              <h5>About</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">What is SEICM?</a></li>
-                <li><a class="link-secondary" href="#">Faith</a></li>
-                <li>
-                  <a class="link-secondary" href="#">A Message from Founder</a>
-                </li>
-                <li>
-                  <a class="link-secondary" href="#">Stuff for developers</a>
-                </li>
-                <li><a class="link-secondary" href="#">News</a></li>
-                <li><a class="link-secondary" href="#">Contact</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Teaching</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Counseling</a></li>
-                <li><a class="link-secondary" href="#">Marriage Course</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Learn More</h5>
-              <ul class="list-unstyled text-small">
-                <li>
-                  <a class="link-secondary" href="#">Books Recommanded</a>
-                </li>
-                <li><a class="link-secondary" href="#">Resources</a></li>
-                <li><a class="link-secondary" href="#">Common Questions</a></li>
-              </ul>
-            </div>
-            <div class="col-6 col-md">
-              <h5>Get Invloved</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="link-secondary" href="#">Donate</a></li>
-                <li><a class="link-secondary" href="#">Events</a></li>
-                <li>
-                  <a class="link-secondary" href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </footer>
-      </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">What is SEICM?</a></li>
+              <li><a class="link-secondary" href="#">Faith</a></li>
+              <li>
+                <a class="link-secondary" href="#">A Message from Founder</a>
+              </li>
+              <li>
+                <a class="link-secondary" href="#">Stuff for developers</a>
+              </li>
+              <li><a class="link-secondary" href="#">News</a></li>
+              <li><a class="link-secondary" href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Teaching</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Counseling</a></li>
+              <li><a class="link-secondary" href="#">Marriage Course</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Learn More</h5>
+            <ul class="list-unstyled text-small">
+              <li>
+                <a class="link-secondary" href="#">Books Recommanded</a>
+              </li>
+              <li><a class="link-secondary" href="#">Resources</a></li>
+              <li><a class="link-secondary" href="#">Common Questions</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Get Invloved</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="link-secondary" href="#">Donate</a></li>
+              <li><a class="link-secondary" href="#">Events</a></li>
+              <li>
+                <a class="link-secondary" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
     </div>
-    <script src="forms-scripts.js"></script>
+  </div>
+  <script src="forms-scripts.js"></script>
 
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-
-
-
-
-<script>
-var user=[]
-
-document.getElementById("f2").style.opacity='0.5'
-
-function sub(){
-var a=cfm.gender.value
-console.log(a)
-
-// user.push(a)
-// console.log(user.value)
-
-localStorage.data=JSON.stringify(a)
-
-
-if(!a){
-
-alert("Error")
-
-  document.getElementById("f1").style.border="1px solid red"
-  document.getElementById("error").innerHTML="* Please Select Any Question"
-  document.getElementById("error").style.color="red"
-
-}
-else{
-  document.getElementById("f1").style.opacity='0.5'
-  document.getElementById("f1").style.border="0"
-  document.getElementById("f2").style.opacity=''
-  document.getElementById("error").innerHTML="* Please complete payment."
-
-  document.getElementById("error").style.color="green"
+  <!-- Bootstrap JS and Popper.js -->
   
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+
+<!-- Include jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/lib..."></script> -->
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+  <!-- Add other Firebase services if needed -->
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=ARSzdCz3Odvqj_Ma3-Gvl0utOxdATZiMMzi8uJgCB0S_wpZ64L30lZsHfqZl6XCHUOc6_URZbPKmdRaq&disable-funding=paylater"></script>
+
+  <!-- // payPal // -->
+
+  <!-- axios import -->
+
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBCrrOLZNZGl31lpjELCwcQONWjc2Nddg8",
+      authDomain: "saltofheart-1e10e.firebaseapp.com",
+      projectId: "saltofheart-1e10e",
+      storageBucket: "saltofheart-1e10e.appspot.com",
+      messagingSenderId: "693289956311",
+      appId: "1:693289956311:web:3232330f5d059d9edd1192",
+      measurementId: "G-J328WPK2T3"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    var userdb = firebase.database().ref("counselingUnMerried");
+
+   
+
+    const sendMail = async (formValue) => {
+      const response = await axios.post("https://app-pxy2i5iqyq-uc.a.run.app/mail", {...formValue , type:"unmarried"})
+      // console.log(formValue , "formValue")
+
+      if (response?.data?.success) {
+        $('#my-mod').modal('toggle');
+      }
+    }
+    paypal.Buttons({
+
+      createOrder: function (data, actions) {
+
+        let formValue = logSelectedFields()
+
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: formValue.amount
+            }
+          }]
+        })
+      },
+      onError: function (err) {
+        // Show an error message to the buyer
+        console.log('An error occurred while processing your payment. Please try again.', err);
+        alert('An error occurred while processing your payment. Please try again.');
+      },
+
+      onApprove: function (data, actions) {
+        // Capture the funds from the transaction
+        return actions.order.capture().then(function (details) {
+          // Accessing commonly used properties
+          var payerName = details.payer.name.given_name;
+          var payerEmail = details.payer.email_address;
+          var transactionId = details.id;
+          var amount = details.purchase_units[0].amount.value;
+          var currency = details.purchase_units[0].amount.currency_code;
+
+          let formValue = logSelectedFields()
+
+          formValue = { ...formValue, payerName, payerEmail, transactionId, amount, currency }
+
+          saveMessages(formValue).then(() => {
+            sendMail(formValue)
+          }).catch((err) => {
+            console.log(err, "something went wrong")
+          })
+
+          // Call your server to save the transaction details (optional)
+        });
+      }
+    }).render('#paypal-button-container');
 
 
 
-}
+
+    // <!-- //Select Question// -->
 
 
-}
+    // <!-- // payment Method // -->
+
+    function logSelectedFields() {
+      var selectedFields = {};
+
+      selectedFields.question = null;
+      var radios = document.getElementsByName('question');
 
 
 
+      for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          selectedFields.question = radios[i].value;
+          break;
+        }
+      }
 
+      // Process Questionnaire 1
+      selectedFields.amount = null;
+      var radios1 = document.getElementsByName('amount');
+      for (var i = 0; i < radios1.length; i++) {
+        if (radios1[i].checked) {
+          selectedFields.amount = radios1[i].value;
+          break;
+        }
+      }
 
-</script>
+      // Process Questionnaire 2
+      selectedFields.time_Date = null;
+      var radios2 = document.getElementsByName('time_Date');
+      for (var j = 0; j < radios2.length; j++) {
+        if (radios2[j].checked) {
+          selectedFields.time_Date = radios2[j].value;
+          break;
+        }
+      }
 
+      // Log the selected fields object
+      console.log(selectedFields);
+      return selectedFields
+    }
 
+    const saveMessages = (formVals) => {
+      return new Promise((resolve, reject) => {
+        var formVal = userdb.push();
+        formVal.set({
+          ...formVals
+        })
+          .then(() => {
+            console.log("Data saved successfully:", formVals);
+            resolve(true); // Resolve the promise indicating success
+          })
+          .catch((error) => {
+            console.error("Error saving data:", error);
+            reject(error); // Reject the promise indicating failure
+          });
+      });
+    };
 
-  </body>
+    const getElementVal = (name) => {
+      return document.getElementsByName(name).value;
+    }
+
+  </script>
+</body>
+
 </html>
